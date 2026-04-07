@@ -12,29 +12,18 @@ export function useActor() {
   const actorQuery = useQuery<backendInterface>({
     queryKey: [ACTOR_QUERY_KEY, identity?.getPrincipal().toString()],
     queryFn: async () => {
-      const isAuthenticated = !!identity;
-
-      let actorOptions = {};
-      if (isAuthenticated) {
-        actorOptions = {
-          agentOptions: {
-            identity,
-          },
-        };
+      const actor = await createActorWithConfig(
+        identity ? { agentOptions: { identity } } : undefined,
+      );
+      const adminToken = getSecretParameter("caffeineAdminToken");
+      if (adminToken) {
+        await actor._initializeAccessControlWithSecret(adminToken);
       }
-
-      const actor = await createActorWithConfig(actorOptions);
-
-      // Always initialize access control with the admin token if present.
-      // This is required for admin operations (createOrder, deleteOrder, etc.)
-      // to work when using username/password login instead of Internet Identity.
-      const adminToken = getSecretParameter("caffeineAdminToken") || "";
-      await actor._initializeAccessControlWithSecret(adminToken);
-
       return actor;
     },
     // Only refetch when identity changes
     staleTime: Number.POSITIVE_INFINITY,
+    // This will cause the actor to be recreated when the identity changes
     enabled: true,
   });
 

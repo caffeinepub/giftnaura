@@ -50102,22 +50102,18 @@ function useActor() {
   const actorQuery = useQuery({
     queryKey: [ACTOR_QUERY_KEY, identity == null ? void 0 : identity.getPrincipal().toString()],
     queryFn: async () => {
-      const isAuthenticated = !!identity;
-      let actorOptions = {};
-      if (isAuthenticated) {
-        actorOptions = {
-          agentOptions: {
-            identity
-          }
-        };
+      const actor = await createActorWithConfig(
+        identity ? { agentOptions: { identity } } : void 0
+      );
+      const adminToken = getSecretParameter("caffeineAdminToken");
+      if (adminToken) {
+        await actor._initializeAccessControlWithSecret(adminToken);
       }
-      const actor = await createActorWithConfig(actorOptions);
-      const adminToken = getSecretParameter("caffeineAdminToken") || "";
-      await actor._initializeAccessControlWithSecret(adminToken);
       return actor;
     },
     // Only refetch when identity changes
     staleTime: Number.POSITIVE_INFINITY,
+    // This will cause the actor to be recreated when the identity changes
     enabled: true
   });
   reactExports.useEffect(() => {
@@ -50138,6 +50134,17 @@ function useActor() {
     actor: actorQuery.data || null,
     isFetching: actorQuery.isFetching
   };
+}
+function useIsAdmin() {
+  const { actor, isFetching } = useActor();
+  return useQuery({
+    queryKey: ["isAdmin"],
+    queryFn: async () => {
+      if (!actor) return false;
+      return actor.isCallerAdmin();
+    },
+    enabled: !!actor && !isFetching
+  });
 }
 function useGetAllOrders() {
   const { actor, isFetching } = useActor();
@@ -50364,6 +50371,13 @@ function AdminDashboard() {
       setSessionChecked(true);
     }
   }, [navigate]);
+  const { data: isAdmin, isLoading: isAdminLoading } = useIsAdmin();
+  reactExports.useEffect(() => {
+    if (sessionChecked && !isAdminLoading && isAdmin === false) {
+      localStorage.removeItem(SESSION_KEY$1);
+      navigate({ to: "/admin", replace: true });
+    }
+  }, [sessionChecked, isAdmin, isAdminLoading, navigate]);
   const [customerName, setCustomerName] = reactExports.useState("");
   const [orderId, setOrderId] = reactExports.useState("");
   const [trackingLink, setTrackingLink] = reactExports.useState("");
@@ -50495,7 +50509,7 @@ function AdminDashboard() {
     );
     ue.success("Link copied!");
   }
-  if (!sessionChecked || actorLoading) {
+  if (!sessionChecked || actorLoading || sessionChecked && isAdminLoading) {
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       "div",
       {
@@ -50928,8 +50942,18 @@ function AdminLogin() {
     setIsLoading(true);
     await new Promise((resolve) => setTimeout(resolve, 300));
     if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
-      localStorage.setItem(SESSION_KEY, "true");
-      navigate({ to: "/admin/dashboard", replace: true });
+      try {
+        const adminToken = getSecretParameter("caffeineAdminToken") || "";
+        const actor = await createActorWithConfig();
+        await actor._initializeAccessControlWithSecret(adminToken);
+        localStorage.setItem(SESSION_KEY, "true");
+        navigate({ to: "/admin/dashboard", replace: true });
+      } catch (err) {
+        setError(
+          err instanceof Error ? `Login failed: ${err.message}` : "Login failed. Please try again."
+        );
+        setIsLoading(false);
+      }
     } else {
       setError("Invalid username or password");
       setIsLoading(false);

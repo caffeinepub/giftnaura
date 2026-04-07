@@ -2,6 +2,8 @@ import { useNavigate } from "@tanstack/react-router";
 import { Loader2, Lock, User } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { createActorWithConfig } from "../config";
+import { getSecretParameter } from "../utils/urlParams";
 
 const ADMIN_USERNAME = "admin";
 const ADMIN_PASSWORD = "rjun0016";
@@ -30,8 +32,22 @@ export default function AdminLogin() {
     await new Promise((resolve) => setTimeout(resolve, 300));
 
     if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
-      localStorage.setItem(SESSION_KEY, "true");
-      navigate({ to: "/admin/dashboard", replace: true });
+      try {
+        // Initialize backend admin session
+        const adminToken = getSecretParameter("caffeineAdminToken") || "";
+        const actor = await createActorWithConfig();
+        await actor._initializeAccessControlWithSecret(adminToken);
+
+        localStorage.setItem(SESSION_KEY, "true");
+        navigate({ to: "/admin/dashboard", replace: true });
+      } catch (err) {
+        setError(
+          err instanceof Error
+            ? `Login failed: ${err.message}`
+            : "Login failed. Please try again.",
+        );
+        setIsLoading(false);
+      }
     } else {
       setError("Invalid username or password");
       setIsLoading(false);

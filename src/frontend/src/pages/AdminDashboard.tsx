@@ -46,6 +46,7 @@ import {
   useCreateOrder,
   useDeleteOrder,
   useGetAllOrders,
+  useIsAdmin,
   useUpdateOrderStatus,
 } from "../hooks/useQueries";
 
@@ -224,6 +225,17 @@ export default function AdminDashboard() {
     }
   }, [navigate]);
 
+  // Backend admin verification
+  const { data: isAdmin, isLoading: isAdminLoading } = useIsAdmin();
+
+  // Redirect if backend does not recognize this session as admin
+  useEffect(() => {
+    if (sessionChecked && !isAdminLoading && isAdmin === false) {
+      localStorage.removeItem(SESSION_KEY);
+      navigate({ to: "/admin", replace: true });
+    }
+  }, [sessionChecked, isAdmin, isAdminLoading, navigate]);
+
   // Add Order form state
   const [customerName, setCustomerName] = useState("");
   const [orderId, setOrderId] = useState("");
@@ -382,7 +394,7 @@ export default function AdminDashboard() {
     toast.success("Link copied!");
   }
 
-  if (!sessionChecked || actorLoading) {
+  if (!sessionChecked || actorLoading || (sessionChecked && isAdminLoading)) {
     return (
       <div
         className="min-h-screen flex items-center justify-center"
