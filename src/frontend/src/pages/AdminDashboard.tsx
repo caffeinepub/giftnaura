@@ -46,7 +46,6 @@ import {
   useCreateOrder,
   useDeleteOrder,
   useGetAllOrders,
-  useIsAdmin,
   useUpdateOrderStatus,
 } from "../hooks/useQueries";
 
@@ -214,27 +213,14 @@ export default function AdminDashboard() {
   const navigate = useNavigate();
   const { isFetching: actorLoading } = useActor();
 
-  // Session-based auth guard
-  const [sessionChecked, setSessionChecked] = useState(false);
-
+  // Session guard: redirect to login if no session
   useEffect(() => {
     if (localStorage.getItem(SESSION_KEY) !== "true") {
       navigate({ to: "/admin", replace: true });
-    } else {
-      setSessionChecked(true);
     }
   }, [navigate]);
 
-  // Backend admin verification
-  const { data: isAdmin, isLoading: isAdminLoading } = useIsAdmin();
-
-  // Redirect if backend does not recognize this session as admin
-  useEffect(() => {
-    if (sessionChecked && !isAdminLoading && isAdmin === false) {
-      localStorage.removeItem(SESSION_KEY);
-      navigate({ to: "/admin", replace: true });
-    }
-  }, [sessionChecked, isAdmin, isAdminLoading, navigate]);
+  const isSessionValid = localStorage.getItem(SESSION_KEY) === "true";
 
   // Add Order form state
   const [customerName, setCustomerName] = useState("");
@@ -394,7 +380,7 @@ export default function AdminDashboard() {
     toast.success("Link copied!");
   }
 
-  if (!sessionChecked || actorLoading || (sessionChecked && isAdminLoading)) {
+  if (!isSessionValid || actorLoading) {
     return (
       <div
         className="min-h-screen flex items-center justify-center"

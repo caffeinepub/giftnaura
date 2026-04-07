@@ -2,8 +2,7 @@ import { useNavigate } from "@tanstack/react-router";
 import { Loader2, Lock, User } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { createActorWithConfig } from "../config";
-import { getSecretParameter } from "../utils/urlParams";
+import { useActor } from "../hooks/useActor";
 
 const ADMIN_USERNAME = "admin";
 const ADMIN_PASSWORD = "rjun0016";
@@ -11,6 +10,7 @@ const SESSION_KEY = "giftnAura_admin_session";
 
 export default function AdminLogin() {
   const navigate = useNavigate();
+  const { actor, isFetching: actorLoading } = useActor();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -26,30 +26,36 @@ export default function AdminLogin() {
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
     setError("");
-    setIsLoading(true);
 
-    // Brief UX delay
-    await new Promise((resolve) => setTimeout(resolve, 300));
-
-    if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
-      try {
-        // Initialize backend admin session
-        const adminToken = getSecretParameter("caffeineAdminToken") || "";
-        const actor = await createActorWithConfig();
-        await actor._initializeAccessControlWithSecret(adminToken);
-
-        localStorage.setItem(SESSION_KEY, "true");
-        navigate({ to: "/admin/dashboard", replace: true });
-      } catch (err) {
-        setError(
-          err instanceof Error
-            ? `Login failed: ${err.message}`
-            : "Login failed. Please try again.",
-        );
-        setIsLoading(false);
-      }
-    } else {
+    if (username !== ADMIN_USERNAME || password !== ADMIN_PASSWORD) {
       setError("Invalid username or password");
+      return;
+    }
+
+    if (!actor) {
+      setError("Backend not ready. Please wait and try again.");
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      // Verify backend recognizes this actor as admin before granting access.
+      // The actor in useActor() is already initialized with the admin token,
+      // so this call will return true if the token is valid.
+      const isAdmin = await actor.isCallerAdmin();
+      if (!isAdmin) {
+        setError("Admin verification failed. Please try again.");
+        setIsLoading(false);
+        return;
+      }
+      localStorage.setItem(SESSION_KEY, "true");
+      navigate({ to: "/admin/dashboard", replace: true });
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? `Login failed: ${err.message}`
+          : "Login failed. Please try again.",
+      );
       setIsLoading(false);
     }
   }
@@ -131,11 +137,17 @@ export default function AdminLogin() {
             <button
               type="submit"
               data-ocid="login.submit_button"
-              disabled={isLoading}
+              disabled={isLoading || actorLoading}
               className="w-full flex items-center justify-center gap-2 bg-gold hover:bg-gold-hover text-white font-semibold py-3.5 px-6 rounded-full transition-colors shadow-gold disabled:opacity-60 disabled:cursor-not-allowed text-sm mt-2"
             >
-              {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
-              {isLoading ? "Verifying..." : "Login"}
+              {isLoading || actorLoading ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : null}
+              {actorLoading
+                ? "Connecting..."
+                : isLoading
+                  ? "Verifying..."
+                  : "Login"}
             </button>
           </form>
 

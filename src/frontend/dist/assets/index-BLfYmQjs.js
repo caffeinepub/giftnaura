@@ -50102,23 +50102,15 @@ function useActor() {
   const actorQuery = useQuery({
     queryKey: [ACTOR_QUERY_KEY, identity == null ? void 0 : identity.getPrincipal().toString()],
     queryFn: async () => {
-      const isAuthenticated = !!identity;
-      if (!isAuthenticated) {
-        return await createActorWithConfig();
-      }
-      const actorOptions = {
-        agentOptions: {
-          identity
-        }
-      };
+      const actorOptions = identity ? { agentOptions: { identity } } : void 0;
       const actor = await createActorWithConfig(actorOptions);
       const adminToken = getSecretParameter("caffeineAdminToken") || "";
-      await actor._initializeAccessControlWithSecret(adminToken);
+      if (adminToken) {
+        await actor._initializeAccessControlWithSecret(adminToken);
+      }
       return actor;
     },
-    // Only refetch when identity changes
     staleTime: Number.POSITIVE_INFINITY,
-    // This will cause the actor to be recreated when the identity changes
     enabled: true
   });
   reactExports.useEffect(() => {
@@ -50139,17 +50131,6 @@ function useActor() {
     actor: actorQuery.data || null,
     isFetching: actorQuery.isFetching
   };
-}
-function useIsAdmin() {
-  const { actor, isFetching } = useActor();
-  return useQuery({
-    queryKey: ["isAdmin"],
-    queryFn: async () => {
-      if (!actor) return false;
-      return actor.isCallerAdmin();
-    },
-    enabled: !!actor && !isFetching
-  });
 }
 function useGetAllOrders() {
   const { actor, isFetching } = useActor();
@@ -50368,21 +50349,12 @@ function OrderCard({
 function AdminDashboard() {
   const navigate = useNavigate();
   const { isFetching: actorLoading } = useActor();
-  const [sessionChecked, setSessionChecked] = reactExports.useState(false);
   reactExports.useEffect(() => {
     if (localStorage.getItem(SESSION_KEY$1) !== "true") {
       navigate({ to: "/admin", replace: true });
-    } else {
-      setSessionChecked(true);
     }
   }, [navigate]);
-  const { data: isAdmin, isLoading: isAdminLoading } = useIsAdmin();
-  reactExports.useEffect(() => {
-    if (sessionChecked && !isAdminLoading && isAdmin === false) {
-      localStorage.removeItem(SESSION_KEY$1);
-      navigate({ to: "/admin", replace: true });
-    }
-  }, [sessionChecked, isAdmin, isAdminLoading, navigate]);
+  const isSessionValid = localStorage.getItem(SESSION_KEY$1) === "true";
   const [customerName, setCustomerName] = reactExports.useState("");
   const [orderId, setOrderId] = reactExports.useState("");
   const [trackingLink, setTrackingLink] = reactExports.useState("");
@@ -50514,7 +50486,7 @@ function AdminDashboard() {
     );
     ue.success("Link copied!");
   }
-  if (!sessionChecked || actorLoading || sessionChecked && isAdminLoading) {
+  if (!isSessionValid || actorLoading) {
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       "div",
       {
@@ -50932,6 +50904,7 @@ const ADMIN_PASSWORD = "rjun0016";
 const SESSION_KEY = "giftnAura_admin_session";
 function AdminLogin() {
   const navigate = useNavigate();
+  const { actor, isFetching: actorLoading } = useActor();
   const [username, setUsername] = reactExports.useState("");
   const [password, setPassword] = reactExports.useState("");
   const [isLoading, setIsLoading] = reactExports.useState(false);
@@ -50944,23 +50917,28 @@ function AdminLogin() {
   async function handleLogin(e) {
     e.preventDefault();
     setError("");
-    setIsLoading(true);
-    await new Promise((resolve) => setTimeout(resolve, 300));
-    if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
-      try {
-        const adminToken = getSecretParameter("caffeineAdminToken") || "";
-        const actor = await createActorWithConfig();
-        await actor._initializeAccessControlWithSecret(adminToken);
-        localStorage.setItem(SESSION_KEY, "true");
-        navigate({ to: "/admin/dashboard", replace: true });
-      } catch (err) {
-        setError(
-          err instanceof Error ? `Login failed: ${err.message}` : "Login failed. Please try again."
-        );
-        setIsLoading(false);
-      }
-    } else {
+    if (username !== ADMIN_USERNAME || password !== ADMIN_PASSWORD) {
       setError("Invalid username or password");
+      return;
+    }
+    if (!actor) {
+      setError("Backend not ready. Please wait and try again.");
+      return;
+    }
+    setIsLoading(true);
+    try {
+      const isAdmin = await actor.isCallerAdmin();
+      if (!isAdmin) {
+        setError("Admin verification failed. Please try again.");
+        setIsLoading(false);
+        return;
+      }
+      localStorage.setItem(SESSION_KEY, "true");
+      navigate({ to: "/admin/dashboard", replace: true });
+    } catch (err) {
+      setError(
+        err instanceof Error ? `Login failed: ${err.message}` : "Login failed. Please try again."
+      );
       setIsLoading(false);
     }
   }
@@ -51045,11 +51023,11 @@ function AdminLogin() {
                   {
                     type: "submit",
                     "data-ocid": "login.submit_button",
-                    disabled: isLoading,
+                    disabled: isLoading || actorLoading,
                     className: "w-full flex items-center justify-center gap-2 bg-gold hover:bg-gold-hover text-white font-semibold py-3.5 px-6 rounded-full transition-colors shadow-gold disabled:opacity-60 disabled:cursor-not-allowed text-sm mt-2",
                     children: [
-                      isLoading ? /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-4 h-4 animate-spin" }) : null,
-                      isLoading ? "Verifying..." : "Login"
+                      isLoading || actorLoading ? /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-4 h-4 animate-spin" }) : null,
+                      actorLoading ? "Connecting..." : isLoading ? "Verifying..." : "Login"
                     ]
                   }
                 )
