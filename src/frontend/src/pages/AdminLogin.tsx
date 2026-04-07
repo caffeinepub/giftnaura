@@ -1,42 +1,42 @@
 import { useNavigate } from "@tanstack/react-router";
-import { Loader2, ShieldAlert } from "lucide-react";
+import { Loader2, Lock, User } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { useActor } from "../hooks/useActor";
-import { useInternetIdentity } from "../hooks/useInternetIdentity";
+
+const ADMIN_USERNAME = "admin";
+const ADMIN_PASSWORD = "rjun0016";
+const SESSION_KEY = "giftnAura_admin_session";
 
 export default function AdminLogin() {
   const navigate = useNavigate();
-  const { login, clear, identity, isLoggingIn, isInitializing } =
-    useInternetIdentity();
-  const { actor, isFetching } = useActor();
-  const [adminCheckDone, setAdminCheckDone] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(false);
-  const [checkingAdmin, setCheckingAdmin] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const isAuthenticated = !!identity;
-
+  // Redirect if already logged in
   useEffect(() => {
-    if (!isAuthenticated || !actor || isFetching || adminCheckDone) return;
-    setCheckingAdmin(true);
-    actor
-      .isCallerAdmin()
-      .then((result) => {
-        setIsAdmin(result);
-        setAdminCheckDone(true);
-        setCheckingAdmin(false);
-        if (result) {
-          navigate({ to: "/admin/dashboard", replace: true });
-        }
-      })
-      .catch(() => {
-        setAdminCheckDone(true);
-        setCheckingAdmin(false);
-      });
-  }, [isAuthenticated, actor, isFetching, adminCheckDone, navigate]);
+    if (localStorage.getItem(SESSION_KEY) === "true") {
+      navigate({ to: "/admin/dashboard", replace: true });
+    }
+  }, [navigate]);
 
-  const isLoading =
-    isLoggingIn || isInitializing || isFetching || checkingAdmin;
+  async function handleLogin(e: React.FormEvent) {
+    e.preventDefault();
+    setError("");
+    setIsLoading(true);
+
+    // Brief UX delay
+    await new Promise((resolve) => setTimeout(resolve, 300));
+
+    if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+      localStorage.setItem(SESSION_KEY, "true");
+      navigate({ to: "/admin/dashboard", replace: true });
+    } else {
+      setError("Invalid username or password");
+      setIsLoading(false);
+    }
+  }
 
   return (
     <div
@@ -72,69 +72,59 @@ export default function AdminLogin() {
             <div className="flex-1 h-px bg-border" />
           </div>
 
-          {/* Access Denied */}
-          {isAuthenticated && adminCheckDone && !isAdmin && (
+          {/* Error */}
+          {error && (
             <motion.div
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               data-ocid="login.error_state"
-              className="mb-6 p-4 rounded-2xl bg-destructive/8 border border-destructive/20 flex gap-3"
+              className="mb-5 p-3.5 rounded-2xl bg-destructive/8 border border-destructive/20 text-center"
             >
-              <ShieldAlert className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
-              <div>
-                <p className="text-sm font-semibold text-destructive">
-                  Access Denied
-                </p>
-                <p className="text-xs text-destructive/70 mt-1 leading-relaxed">
-                  This portal is for administrators only. Your account does not
-                  have admin privileges.
-                </p>
-              </div>
+              <p className="text-sm font-semibold text-destructive">{error}</p>
             </motion.div>
           )}
 
-          {/* Actions */}
-          {!isAuthenticated || (adminCheckDone && !isAdmin) ? (
-            <div className="space-y-3">
-              {!isAuthenticated && (
-                <button
-                  type="button"
-                  data-ocid="login.primary_button"
-                  onClick={login}
-                  disabled={isLoading}
-                  className="w-full flex items-center justify-center gap-2 bg-gold hover:bg-gold-hover text-white font-semibold py-3.5 px-6 rounded-full transition-colors shadow-gold disabled:opacity-60 disabled:cursor-not-allowed text-sm"
-                >
-                  {isLoading ? (
-                    <Loader2 className="w-4 h-4 animate-spin" />
-                  ) : null}
-                  {isLoading ? "Connecting..." : "Login with Internet Identity"}
-                </button>
-              )}
-              {isAuthenticated && adminCheckDone && !isAdmin && (
-                <button
-                  type="button"
-                  data-ocid="login.secondary_button"
-                  onClick={clear}
-                  className="w-full flex items-center justify-center gap-2 bg-white border-2 border-gold text-gold hover:bg-gold/5 font-semibold py-3.5 px-6 rounded-full transition-colors text-sm"
-                >
-                  Try a Different Account
-                </button>
-              )}
+          {/* Login Form */}
+          <form onSubmit={handleLogin} className="space-y-4">
+            <div className="relative">
+              <User className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
+              <input
+                data-ocid="login.input"
+                type="text"
+                placeholder="Username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                autoComplete="username"
+                required
+                className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-colors"
+              />
             </div>
-          ) : (
-            <div
-              data-ocid="login.loading_state"
-              className="flex items-center justify-center py-5"
+            <div className="relative">
+              <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
+              <input
+                data-ocid="login.input"
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                autoComplete="current-password"
+                required
+                className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-colors"
+              />
+            </div>
+            <button
+              type="submit"
+              data-ocid="login.submit_button"
+              disabled={isLoading}
+              className="w-full flex items-center justify-center gap-2 bg-gold hover:bg-gold-hover text-white font-semibold py-3.5 px-6 rounded-full transition-colors shadow-gold disabled:opacity-60 disabled:cursor-not-allowed text-sm mt-2"
             >
-              <Loader2 className="w-5 h-5 text-gold animate-spin" />
-              <span className="ml-3 text-muted-foreground text-sm">
-                Verifying access...
-              </span>
-            </div>
-          )}
+              {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
+              {isLoading ? "Verifying..." : "Login"}
+            </button>
+          </form>
 
           <p className="text-center text-xs text-muted-foreground mt-7">
-            Protected by Internet Identity
+            Protected admin area
           </p>
         </div>
 

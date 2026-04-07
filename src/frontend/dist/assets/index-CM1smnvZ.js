@@ -25186,24 +25186,35 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$j = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
-const Check = createLucideIcon("check", __iconNode$j);
+const __iconNode$k = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
+const Check = createLucideIcon("check", __iconNode$k);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$i = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-const ChevronDown = createLucideIcon("chevron-down", __iconNode$i);
+const __iconNode$j = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+const ChevronDown = createLucideIcon("chevron-down", __iconNode$j);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$h = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
-const ChevronUp = createLucideIcon("chevron-up", __iconNode$h);
+const __iconNode$i = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
+const ChevronUp = createLucideIcon("chevron-up", __iconNode$i);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$h = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
+];
+const CircleCheck = createLucideIcon("circle-check", __iconNode$h);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -25211,10 +25222,10 @@ const ChevronUp = createLucideIcon("chevron-up", __iconNode$h);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$g = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
+  ["rect", { width: "14", height: "14", x: "8", y: "8", rx: "2", ry: "2", key: "17jyea" }],
+  ["path", { d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2", key: "zix9uf" }]
 ];
-const CircleCheck = createLucideIcon("circle-check", __iconNode$g);
+const Copy = createLucideIcon("copy", __iconNode$g);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -25222,10 +25233,11 @@ const CircleCheck = createLucideIcon("circle-check", __iconNode$g);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$f = [
-  ["rect", { width: "14", height: "14", x: "8", y: "8", rx: "2", ry: "2", key: "17jyea" }],
-  ["path", { d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2", key: "zix9uf" }]
+  ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
+  ["path", { d: "M10 14 21 3", key: "gplh6r" }],
+  ["path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6", key: "a6xqqp" }]
 ];
-const Copy = createLucideIcon("copy", __iconNode$f);
+const ExternalLink = createLucideIcon("external-link", __iconNode$f);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -25233,18 +25245,6 @@ const Copy = createLucideIcon("copy", __iconNode$f);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$e = [
-  ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
-  ["path", { d: "M10 14 21 3", key: "gplh6r" }],
-  ["path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6", key: "a6xqqp" }]
-];
-const ExternalLink = createLucideIcon("external-link", __iconNode$e);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$d = [
   ["rect", { x: "3", y: "8", width: "18", height: "4", rx: "1", key: "bkv52" }],
   ["path", { d: "M12 8v13", key: "1c76mn" }],
   ["path", { d: "M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7", key: "6wjy6b" }],
@@ -25256,27 +25256,38 @@ const __iconNode$d = [
     }
   ]
 ];
-const Gift = createLucideIcon("gift", __iconNode$d);
+const Gift = createLucideIcon("gift", __iconNode$e);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$c = [
+const __iconNode$d = [
   ["path", { d: "M9 17H7A5 5 0 0 1 7 7h2", key: "8i5ue5" }],
   ["path", { d: "M15 7h2a5 5 0 1 1 0 10h-2", key: "1b9ql8" }],
   ["line", { x1: "8", x2: "16", y1: "12", y2: "12", key: "1jonct" }]
 ];
-const Link2 = createLucideIcon("link-2", __iconNode$c);
+const Link2 = createLucideIcon("link-2", __iconNode$d);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$b = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
-const LoaderCircle = createLucideIcon("loader-circle", __iconNode$b);
+const __iconNode$c = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
+const LoaderCircle = createLucideIcon("loader-circle", __iconNode$c);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$b = [
+  ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
+  ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
+];
+const Lock = createLucideIcon("lock", __iconNode$b);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -25393,17 +25404,10 @@ const Search = createLucideIcon("search", __iconNode$4);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$3 = [
-  [
-    "path",
-    {
-      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
-      key: "oel41y"
-    }
-  ],
-  ["path", { d: "M12 8v4", key: "1got3b" }],
-  ["path", { d: "M12 16h.01", key: "1drbdi" }]
+  ["rect", { width: "14", height: "20", x: "5", y: "2", rx: "2", ry: "2", key: "1yt0o3" }],
+  ["path", { d: "M12 18h.01", key: "mhygvu" }]
 ];
-const ShieldAlert = createLucideIcon("shield-alert", __iconNode$3);
+const Smartphone = createLucideIcon("smartphone", __iconNode$3);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -25411,10 +25415,13 @@ const ShieldAlert = createLucideIcon("shield-alert", __iconNode$3);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$2 = [
-  ["rect", { width: "14", height: "20", x: "5", y: "2", rx: "2", ry: "2", key: "1yt0o3" }],
-  ["path", { d: "M12 18h.01", key: "mhygvu" }]
+  ["path", { d: "M3 6h18", key: "d0wm0j" }],
+  ["path", { d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6", key: "4alrt4" }],
+  ["path", { d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2", key: "v07s0e" }],
+  ["line", { x1: "10", x2: "10", y1: "11", y2: "17", key: "1uufr5" }],
+  ["line", { x1: "14", x2: "14", y1: "11", y2: "17", key: "xtxkd" }]
 ];
-const Smartphone = createLucideIcon("smartphone", __iconNode$2);
+const Trash2 = createLucideIcon("trash-2", __iconNode$2);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -25422,13 +25429,10 @@ const Smartphone = createLucideIcon("smartphone", __iconNode$2);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$1 = [
-  ["path", { d: "M3 6h18", key: "d0wm0j" }],
-  ["path", { d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6", key: "4alrt4" }],
-  ["path", { d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2", key: "v07s0e" }],
-  ["line", { x1: "10", x2: "10", y1: "11", y2: "17", key: "1uufr5" }],
-  ["line", { x1: "14", x2: "14", y1: "11", y2: "17", key: "xtxkd" }]
+  ["path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2", key: "975kel" }],
+  ["circle", { cx: "12", cy: "7", r: "4", key: "17ys0d" }]
 ];
-const Trash2 = createLucideIcon("trash-2", __iconNode$1);
+const User = createLucideIcon("user", __iconNode$1);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -48518,7 +48522,7 @@ async function createActorWithConfig(options) {
     return mock;
   }
   const config = await loadConfig();
-  const resolvedOptions = options ?? {};
+  const resolvedOptions = {};
   const agent = new HttpAgent({
     ...resolvedOptions.agentOptions,
     host: config.backend_host
@@ -48625,6 +48629,1336 @@ function getSecretFromHash(paramName) {
 }
 function getSecretParameter(paramName) {
   return getSecretFromHash(paramName);
+}
+const ACTOR_QUERY_KEY = "actor";
+function useActor() {
+  const queryClient2 = useQueryClient();
+  const actorQuery = useQuery({
+    queryKey: [ACTOR_QUERY_KEY],
+    queryFn: async () => {
+      const actor = await createActorWithConfig();
+      const adminToken = getSecretParameter("caffeineAdminToken") || "";
+      await actor._initializeAccessControlWithSecret(adminToken);
+      return actor;
+    },
+    staleTime: Number.POSITIVE_INFINITY,
+    enabled: true
+  });
+  reactExports.useEffect(() => {
+    if (actorQuery.data) {
+      queryClient2.invalidateQueries({
+        predicate: (query) => {
+          return !query.queryKey.includes(ACTOR_QUERY_KEY);
+        }
+      });
+      queryClient2.refetchQueries({
+        predicate: (query) => {
+          return !query.queryKey.includes(ACTOR_QUERY_KEY);
+        }
+      });
+    }
+  }, [actorQuery.data, queryClient2]);
+  return {
+    actor: actorQuery.data || null,
+    isFetching: actorQuery.isFetching
+  };
+}
+function useGetAllOrders() {
+  const { actor, isFetching } = useActor();
+  return useQuery({
+    queryKey: ["orders"],
+    queryFn: async () => {
+      if (!actor) return [];
+      return actor.getAllOrders();
+    },
+    enabled: !!actor && !isFetching
+  });
+}
+function useGetOrder(orderId) {
+  const { actor, isFetching } = useActor();
+  return useQuery({
+    queryKey: ["order", orderId],
+    queryFn: async () => {
+      if (!actor || !orderId) return null;
+      try {
+        return await actor.getOrder(orderId);
+      } catch {
+        return null;
+      }
+    },
+    enabled: !!actor && !isFetching && !!orderId,
+    retry: false
+  });
+}
+function useCreateOrder() {
+  const { actor } = useActor();
+  const queryClient2 = useQueryClient();
+  return useMutation({
+    mutationFn: async (order) => {
+      if (!actor) throw new Error("Not connected");
+      await actor.createOrder(order);
+    },
+    onSuccess: () => {
+      queryClient2.invalidateQueries({ queryKey: ["orders"] });
+    }
+  });
+}
+function useDeleteOrder() {
+  const { actor } = useActor();
+  const queryClient2 = useQueryClient();
+  return useMutation({
+    mutationFn: async (orderId) => {
+      if (!actor) throw new Error("Not connected");
+      await actor.deleteOrder(orderId);
+    },
+    onSuccess: () => {
+      queryClient2.invalidateQueries({ queryKey: ["orders"] });
+    }
+  });
+}
+function useUpdateOrderStatus() {
+  const { actor } = useActor();
+  const queryClient2 = useQueryClient();
+  return useMutation({
+    mutationFn: async ({
+      orderId,
+      status
+    }) => {
+      if (!actor) throw new Error("Not connected");
+      await actor.updateOrderStatus(orderId, status);
+    },
+    onSuccess: () => {
+      queryClient2.invalidateQueries({ queryKey: ["orders"] });
+    }
+  });
+}
+const SESSION_KEY$1 = "giftnAura_admin_session";
+function formatDate(createdAt) {
+  return new Date(Number(createdAt / 1000000n)).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+  });
+}
+const STATUS_CONFIG$1 = {
+  [OrderStatus.shipped]: {
+    label: "Shipped",
+    dot: "bg-blue-500",
+    badge: "bg-blue-50 text-blue-700 border-blue-200"
+  },
+  [OrderStatus.delivered]: {
+    label: "Delivered",
+    dot: "bg-green-500",
+    badge: "bg-green-50 text-green-700 border-green-200"
+  },
+  [OrderStatus.processing]: {
+    label: "In Transit",
+    dot: "bg-amber-500",
+    badge: "bg-amber-50 text-amber-700 border-amber-200"
+  },
+  [OrderStatus.cancelled]: {
+    label: "Cancelled",
+    dot: "bg-gray-400",
+    badge: "bg-gray-50 text-gray-600 border-gray-200"
+  }
+};
+function StatusBadge$1({ status }) {
+  const config = STATUS_CONFIG$1[status] ?? STATUS_CONFIG$1[OrderStatus.shipped];
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "span",
+    {
+      className: `inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium border ${config.badge}`,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: `w-1.5 h-1.5 rounded-full ${config.dot}` }),
+        config.label
+      ]
+    }
+  );
+}
+function OrderCard({
+  order,
+  index: index2,
+  onDelete,
+  onEdit
+}) {
+  const trackingUrl = `${window.location.origin}/track/${order.orderId}`;
+  function copyLink() {
+    navigator.clipboard.writeText(trackingUrl);
+    ue.success("Tracking link copied!");
+  }
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    motion.div,
+    {
+      layout: true,
+      initial: { opacity: 0, y: 14 },
+      animate: { opacity: 1, y: 0 },
+      exit: { opacity: 0, scale: 0.97, y: -8 },
+      transition: { duration: 0.25 },
+      "data-ocid": `orders.item.${index2}`,
+      className: "bg-white rounded-2xl shadow-card p-5 hover:shadow-card-hover transition-shadow",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between gap-3 mb-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0 flex-1", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground truncate text-sm", children: order.customerName }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono font-medium text-foreground/70", children: order.orderId }) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(StatusBadge$1, { status: order.status })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mb-4", children: formatDate(order.createdAt) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 flex-wrap", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
+            {
+              type: "button",
+              "data-ocid": `orders.edit_button.${index2}`,
+              onClick: () => onEdit(order),
+              className: "flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-muted hover:bg-border text-foreground transition-colors",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Pencil, { className: "w-3 h-3" }),
+                "Edit"
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
+            {
+              type: "button",
+              "data-ocid": `orders.secondary_button.${index2}`,
+              onClick: copyLink,
+              className: "flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-gold/10 hover:bg-gold/20 text-gold transition-colors",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "w-3 h-3" }),
+                "Copy Link"
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(AlertDialog, { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(AlertDialogTrigger, { asChild: true, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "button",
+              {
+                type: "button",
+                "data-ocid": `orders.delete_button.${index2}`,
+                className: "flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-destructive/10 hover:bg-destructive/20 text-destructive transition-colors ml-auto",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Trash2, { className: "w-3 h-3" }),
+                  "Delete"
+                ]
+              }
+            ) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(AlertDialogContent, { "data-ocid": "orders.dialog", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(AlertDialogHeader, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(AlertDialogTitle, { children: "Delete this order?" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(AlertDialogDescription, { children: [
+                  "This will permanently remove the tracking page for",
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: order.customerName }),
+                  " (Order",
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("code", { children: order.orderId }),
+                  "). This action cannot be undone."
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(AlertDialogFooter, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(AlertDialogCancel, { "data-ocid": "orders.cancel_button", children: "Cancel" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  AlertDialogAction,
+                  {
+                    "data-ocid": "orders.confirm_button",
+                    onClick: () => onDelete(order.orderId),
+                    className: "bg-destructive text-white hover:bg-destructive/90",
+                    children: "Delete Order"
+                  }
+                )
+              ] })
+            ] })
+          ] })
+        ] })
+      ]
+    }
+  );
+}
+function AdminDashboard() {
+  const navigate = useNavigate();
+  const { isFetching: actorLoading } = useActor();
+  const [sessionChecked, setSessionChecked] = reactExports.useState(false);
+  reactExports.useEffect(() => {
+    if (localStorage.getItem(SESSION_KEY$1) !== "true") {
+      navigate({ to: "/admin", replace: true });
+    } else {
+      setSessionChecked(true);
+    }
+  }, [navigate]);
+  const [customerName, setCustomerName] = reactExports.useState("");
+  const [orderId, setOrderId] = reactExports.useState("");
+  const [trackingLink, setTrackingLink] = reactExports.useState("");
+  const [status, setStatus] = reactExports.useState(OrderStatus.shipped);
+  const [createdOrderId, setCreatedOrderId] = reactExports.useState(null);
+  const [editState, setEditState] = reactExports.useState({
+    order: {
+      customerName: "",
+      orderId: "",
+      trackingLink: "",
+      status: OrderStatus.shipped,
+      createdAt: 0n
+    },
+    open: false
+  });
+  const [editCustomerName, setEditCustomerName] = reactExports.useState("");
+  const [editTrackingLink, setEditTrackingLink] = reactExports.useState("");
+  const [editStatus, setEditStatus] = reactExports.useState(
+    OrderStatus.shipped
+  );
+  const [search, setSearch] = reactExports.useState("");
+  const { data: orders = [], isLoading: ordersLoading } = useGetAllOrders();
+  const createOrder = useCreateOrder();
+  const deleteOrder = useDeleteOrder();
+  const updateStatus = useUpdateOrderStatus();
+  const filteredOrders = orders.filter(
+    (o2) => o2.customerName.toLowerCase().includes(search.toLowerCase()) || o2.orderId.toLowerCase().includes(search.toLowerCase())
+  );
+  function openEdit(order) {
+    setEditState({ order, open: true });
+    setEditCustomerName(order.customerName);
+    setEditTrackingLink(order.trackingLink);
+    setEditStatus(order.status);
+  }
+  function closeEdit() {
+    setEditState((prev) => ({ ...prev, open: false }));
+  }
+  async function handleSaveEdit() {
+    if (!editCustomerName.trim() || !editTrackingLink.trim()) {
+      ue.error("Please fill in all fields");
+      return;
+    }
+    updateStatus.mutate(
+      { orderId: editState.order.orderId, status: editStatus },
+      {
+        onSuccess: () => {
+          if (editCustomerName.trim() !== editState.order.customerName || editTrackingLink.trim() !== editState.order.trackingLink) {
+            deleteOrder.mutate(editState.order.orderId, {
+              onSuccess: () => {
+                createOrder.mutate(
+                  {
+                    customerName: editCustomerName.trim(),
+                    orderId: editState.order.orderId,
+                    trackingLink: editTrackingLink.trim(),
+                    status: editStatus,
+                    createdAt: editState.order.createdAt
+                  },
+                  {
+                    onSuccess: () => {
+                      ue.success("Order updated!");
+                      closeEdit();
+                    },
+                    onError: (err) => ue.error(
+                      err instanceof Error ? err.message : "Failed to update order"
+                    )
+                  }
+                );
+              },
+              onError: (err) => ue.error(
+                err instanceof Error ? err.message : "Failed to update order"
+              )
+            });
+          } else {
+            ue.success("Status updated!");
+            closeEdit();
+          }
+        },
+        onError: (err) => ue.error(
+          err instanceof Error ? err.message : "Failed to update status"
+        )
+      }
+    );
+  }
+  async function handleCreateOrder(e) {
+    e.preventDefault();
+    if (!customerName.trim() || !orderId.trim() || !trackingLink.trim()) {
+      ue.error("Please fill in all fields");
+      return;
+    }
+    const newOrder = {
+      customerName: customerName.trim(),
+      orderId: orderId.trim(),
+      trackingLink: trackingLink.trim(),
+      status,
+      createdAt: BigInt(Date.now()) * 1000000n
+    };
+    createOrder.mutate(newOrder, {
+      onSuccess: () => {
+        setCreatedOrderId(orderId.trim());
+        setCustomerName("");
+        setOrderId("");
+        setTrackingLink("");
+        setStatus(OrderStatus.shipped);
+        ue.success("Tracking page created!");
+      },
+      onError: (err) => {
+        ue.error(
+          err instanceof Error ? err.message : "Failed to create order"
+        );
+      }
+    });
+  }
+  function handleDelete(id2) {
+    deleteOrder.mutate(id2, {
+      onSuccess: () => ue.success("Order deleted"),
+      onError: (err) => ue.error(
+        err instanceof Error ? err.message : "Failed to delete order"
+      )
+    });
+  }
+  function handleLogout() {
+    localStorage.removeItem(SESSION_KEY$1);
+    navigate({ to: "/admin", replace: true });
+  }
+  function copyCreatedLink() {
+    if (!createdOrderId) return;
+    navigator.clipboard.writeText(
+      `${window.location.origin}/track/${createdOrderId}`
+    );
+    ue.success("Link copied!");
+  }
+  if (!sessionChecked || actorLoading) {
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: "min-h-screen flex items-center justify-center",
+        style: {
+          background: "linear-gradient(160deg, #F5F0E8 0%, #EDE4D3 100%)"
+        },
+        "data-ocid": "admin.loading_state",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-8 h-8 text-gold animate-spin" })
+      }
+    );
+  }
+  const isSavingEdit = updateStatus.isPending || deleteOrder.isPending || createOrder.isPending;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      className: "min-h-screen",
+      style: {
+        background: "linear-gradient(160deg, #F5F0E8 0%, #EDE4D3 100%)"
+      },
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-20 bg-white/80 backdrop-blur-md border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-4xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "img",
+            {
+              src: "/assets/generated/giftnAura-logo-cropped.dim_440x200.png",
+              alt: "giftNaura",
+              className: "h-10 w-auto object-contain",
+              style: { maxWidth: "140px" }
+            }
+          ) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
+            {
+              type: "button",
+              "data-ocid": "admin.secondary_button",
+              onClick: handleLogout,
+              className: "flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(LogOut, { className: "w-4 h-4" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "hidden sm:inline", children: "Logout" })
+              ]
+            }
+          )
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "max-w-4xl mx-auto px-4 md:px-8 py-8 space-y-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.section,
+            {
+              initial: { opacity: 0, y: 16 },
+              animate: { opacity: 1, y: 0 },
+              transition: { duration: 0.4 },
+              className: "bg-white rounded-3xl shadow-card p-6 md:p-8",
+              "data-ocid": "admin.panel",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-6", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-xl bg-gold/10 flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-5 h-5 text-gold" }) }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-lg text-foreground", children: "Add New Order" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Create a tracking page for a customer" })
+                  ] })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("form", { onSubmit: handleCreateOrder, className: "space-y-4", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-cols-2 gap-4", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Label,
+                        {
+                          htmlFor: "customerName",
+                          className: "text-sm font-medium text-foreground",
+                          children: "Customer Name"
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Input,
+                        {
+                          "data-ocid": "order.input",
+                          id: "customerName",
+                          value: customerName,
+                          onChange: (e) => setCustomerName(e.target.value),
+                          placeholder: "e.g. Layla Al-Rashid",
+                          className: "rounded-xl border-border",
+                          autoComplete: "off"
+                        }
+                      )
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Label,
+                        {
+                          htmlFor: "orderId",
+                          className: "text-sm font-medium text-foreground",
+                          children: "Order ID"
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Input,
+                        {
+                          "data-ocid": "order.input",
+                          id: "orderId",
+                          value: orderId,
+                          onChange: (e) => setOrderId(e.target.value),
+                          placeholder: "e.g. GN-2025-047",
+                          className: "rounded-xl border-border",
+                          autoComplete: "off"
+                        }
+                      )
+                    ] })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Label,
+                      {
+                        htmlFor: "trackingLink",
+                        className: "text-sm font-medium text-foreground",
+                        children: "Tracking URL (shipping partner link)"
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Input,
+                      {
+                        "data-ocid": "order.input",
+                        id: "trackingLink",
+                        type: "url",
+                        value: trackingLink,
+                        onChange: (e) => setTrackingLink(e.target.value),
+                        placeholder: "https://tracking.aramex.com/...",
+                        className: "rounded-xl border-border",
+                        autoComplete: "off"
+                      }
+                    )
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Label,
+                      {
+                        htmlFor: "status-select",
+                        className: "text-sm font-medium text-foreground",
+                        children: "Initial Status"
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      Select,
+                      {
+                        value: status,
+                        onValueChange: (val) => setStatus(val),
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            SelectTrigger,
+                            {
+                              id: "status-select",
+                              "data-ocid": "order.select",
+                              className: "rounded-xl border-border w-full md:w-[200px]",
+                              children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, {})
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.processing, children: "In Transit" }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.shipped, children: "Shipped" }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.delivered, children: "Delivered" }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.cancelled, children: "Cancelled" })
+                          ] })
+                        ]
+                      }
+                    )
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-3 pt-2", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "button",
+                    {
+                      "data-ocid": "order.submit_button",
+                      type: "submit",
+                      disabled: createOrder.isPending,
+                      className: "flex items-center gap-2 bg-gold hover:bg-gold-hover text-white font-semibold py-2.5 px-6 rounded-full transition-colors shadow-gold disabled:opacity-60 disabled:cursor-not-allowed text-sm",
+                      children: [
+                        createOrder.isPending ? /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-4 h-4 animate-spin" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-4 h-4" }),
+                        createOrder.isPending ? "Saving..." : "Save Order"
+                      ]
+                    }
+                  ) })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { children: createdOrderId && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  motion.div,
+                  {
+                    initial: { opacity: 0, y: 8 },
+                    animate: { opacity: 1, y: 0 },
+                    exit: { opacity: 0, y: -8 },
+                    "data-ocid": "order.success_state",
+                    className: "mt-5 p-4 rounded-2xl bg-green-50 border border-green-200 flex items-start gap-3",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-semibold text-green-800", children: "Tracking page created!" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-green-700 mt-1 font-mono break-all", children: [
+                          window.location.origin,
+                          "/track/",
+                          createdOrderId
+                        ] })
+                      ] }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                        "button",
+                        {
+                          type: "button",
+                          "data-ocid": "order.secondary_button",
+                          onClick: copyCreatedLink,
+                          className: "flex-shrink-0 flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-white border border-green-300 text-green-700 hover:bg-green-50 transition-colors",
+                          children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "w-3 h-3" }),
+                            "Copy"
+                          ]
+                        }
+                      )
+                    ]
+                  }
+                ) })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.section,
+            {
+              initial: { opacity: 0, y: 16 },
+              animate: { opacity: 1, y: 0 },
+              transition: { duration: 0.4, delay: 0.1 },
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display font-bold text-xl text-foreground", children: [
+                  "All Orders",
+                  orders.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "ml-2 text-sm font-body font-normal text-muted-foreground", children: [
+                    "(",
+                    filteredOrders.length,
+                    ")"
+                  ] })
+                ] }) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mb-5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Search, { className: "absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    Input,
+                    {
+                      "data-ocid": "admin.search_input",
+                      value: search,
+                      onChange: (e) => setSearch(e.target.value),
+                      placeholder: "Search by name or order ID...",
+                      className: "pl-11 rounded-full border-border bg-white shadow-xs"
+                    }
+                  )
+                ] }),
+                ordersLoading ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "div",
+                  {
+                    "data-ocid": "orders.loading_state",
+                    className: "flex items-center justify-center py-16",
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-8 h-8 text-gold animate-spin" })
+                  }
+                ) : filteredOrders.length === 0 ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  motion.div,
+                  {
+                    initial: { opacity: 0 },
+                    animate: { opacity: 1 },
+                    "data-ocid": "orders.empty_state",
+                    className: "bg-white rounded-3xl shadow-card p-12 text-center",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Package2, { className: "w-6 h-6 text-gold" }) }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display font-bold text-lg text-foreground mb-1", children: search ? "No orders found" : "No orders yet" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: search ? "Try a different search term" : "Add your first order above to get started" })
+                    ]
+                  }
+                ) : /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid sm:grid-cols-2 gap-4", "data-ocid": "orders.list", children: /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { children: filteredOrders.map((order, index2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  OrderCard,
+                  {
+                    order,
+                    index: index2 + 1,
+                    onDelete: handleDelete,
+                    onEdit: openEdit
+                  },
+                  order.orderId
+                )) }) })
+              ]
+            }
+          )
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Dialog,
+          {
+            open: editState.open,
+            onOpenChange: (open) => {
+              if (!open) closeEdit();
+            },
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              DialogContent,
+              {
+                "data-ocid": "orders.dialog",
+                className: "rounded-3xl max-w-md",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(DialogHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { className: "font-display text-lg", children: "Edit Order" }) }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 pt-2", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { className: "text-sm font-medium text-foreground", children: "Customer Name" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Input,
+                        {
+                          "data-ocid": "edit.input",
+                          value: editCustomerName,
+                          onChange: (e) => setEditCustomerName(e.target.value),
+                          className: "rounded-xl border-border",
+                          autoComplete: "off"
+                        }
+                      )
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { className: "text-sm font-medium text-foreground", children: "Order ID" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Input,
+                        {
+                          value: editState.order.orderId,
+                          disabled: true,
+                          className: "rounded-xl border-border bg-muted/50 text-muted-foreground"
+                        }
+                      )
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { className: "text-sm font-medium text-foreground", children: "Tracking URL" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Input,
+                        {
+                          "data-ocid": "edit.input",
+                          type: "url",
+                          value: editTrackingLink,
+                          onChange: (e) => setEditTrackingLink(e.target.value),
+                          className: "rounded-xl border-border",
+                          autoComplete: "off"
+                        }
+                      )
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { className: "text-sm font-medium text-foreground", children: "Status" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                        Select,
+                        {
+                          value: editStatus,
+                          onValueChange: (val) => setEditStatus(val),
+                          children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              SelectTrigger,
+                              {
+                                "data-ocid": "edit.select",
+                                className: "rounded-xl border-border w-full",
+                                children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, {})
+                              }
+                            ),
+                            /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.processing, children: "In Transit" }),
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.shipped, children: "Shipped" }),
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.delivered, children: "Delivered" }),
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.cancelled, children: "Cancelled" })
+                            ] })
+                          ]
+                        }
+                      )
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-3 pt-2", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "button",
+                        {
+                          type: "button",
+                          "data-ocid": "edit.cancel_button",
+                          onClick: closeEdit,
+                          className: "flex-1 py-2.5 px-4 rounded-full border-2 border-border text-sm font-medium text-foreground hover:bg-muted transition-colors",
+                          children: "Cancel"
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                        "button",
+                        {
+                          type: "button",
+                          "data-ocid": "edit.save_button",
+                          onClick: handleSaveEdit,
+                          disabled: isSavingEdit,
+                          className: "flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-full bg-gold hover:bg-gold-hover text-white text-sm font-semibold shadow-gold disabled:opacity-60 disabled:cursor-not-allowed transition-colors",
+                          children: [
+                            isSavingEdit ? /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-4 h-4 animate-spin" }) : null,
+                            isSavingEdit ? "Saving..." : "Save Changes"
+                          ]
+                        }
+                      )
+                    ] })
+                  ] })
+                ]
+              }
+            )
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "mt-16 py-6 border-t border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-center text-xs text-muted-foreground", children: [
+          "© ",
+          (/* @__PURE__ */ new Date()).getFullYear(),
+          " gift",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Naura" }),
+          ". Built with ❤️ using",
+          " ",
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "a",
+            {
+              href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`,
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "text-gold hover:underline",
+              children: "caffeine.ai"
+            }
+          )
+        ] }) })
+      ]
+    }
+  );
+}
+const ADMIN_USERNAME = "admin";
+const ADMIN_PASSWORD = "rjun0016";
+const SESSION_KEY = "giftnAura_admin_session";
+function AdminLogin() {
+  const navigate = useNavigate();
+  const [username, setUsername] = reactExports.useState("");
+  const [password, setPassword] = reactExports.useState("");
+  const [isLoading, setIsLoading] = reactExports.useState(false);
+  const [error, setError] = reactExports.useState("");
+  reactExports.useEffect(() => {
+    if (localStorage.getItem(SESSION_KEY) === "true") {
+      navigate({ to: "/admin/dashboard", replace: true });
+    }
+  }, [navigate]);
+  async function handleLogin(e) {
+    e.preventDefault();
+    setError("");
+    setIsLoading(true);
+    await new Promise((resolve) => setTimeout(resolve, 300));
+    if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+      localStorage.setItem(SESSION_KEY, "true");
+      navigate({ to: "/admin/dashboard", replace: true });
+    } else {
+      setError("Invalid username or password");
+      setIsLoading(false);
+    }
+  }
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "div",
+    {
+      className: "min-h-screen flex flex-col items-center justify-center px-4 py-12",
+      style: {
+        background: "linear-gradient(160deg, #F5F0E8 0%, #EDE4D3 100%)"
+      },
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, scale: 0.96 },
+          animate: { opacity: 1, scale: 1 },
+          transition: { duration: 0.35 },
+          className: "w-full max-w-sm",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-white rounded-3xl shadow-card p-8 md:p-10", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-8", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "img",
+                  {
+                    src: "/assets/generated/giftnAura-logo-cropped.dim_440x200.png",
+                    alt: "giftNaura",
+                    className: "h-20 w-auto object-contain mx-auto mb-4",
+                    style: { maxWidth: "220px" }
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm", children: "Admin Portal" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-8", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-1 h-px bg-border" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] text-gold font-semibold uppercase tracking-[0.18em]", children: "Secure Login" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-1 h-px bg-border" })
+              ] }),
+              error && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                motion.div,
+                {
+                  initial: { opacity: 0, y: 8 },
+                  animate: { opacity: 1, y: 0 },
+                  "data-ocid": "login.error_state",
+                  className: "mb-5 p-3.5 rounded-2xl bg-destructive/8 border border-destructive/20 text-center",
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-semibold text-destructive", children: error })
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("form", { onSubmit: handleLogin, className: "space-y-4", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(User, { className: "absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "input",
+                    {
+                      "data-ocid": "login.input",
+                      type: "text",
+                      placeholder: "Username",
+                      value: username,
+                      onChange: (e) => setUsername(e.target.value),
+                      autoComplete: "username",
+                      required: true,
+                      className: "w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-colors"
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Lock, { className: "absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "input",
+                    {
+                      "data-ocid": "login.input",
+                      type: "password",
+                      placeholder: "Password",
+                      value: password,
+                      onChange: (e) => setPassword(e.target.value),
+                      autoComplete: "current-password",
+                      required: true,
+                      className: "w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-muted/30 text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-colors"
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "button",
+                  {
+                    type: "submit",
+                    "data-ocid": "login.submit_button",
+                    disabled: isLoading,
+                    className: "w-full flex items-center justify-center gap-2 bg-gold hover:bg-gold-hover text-white font-semibold py-3.5 px-6 rounded-full transition-colors shadow-gold disabled:opacity-60 disabled:cursor-not-allowed text-sm mt-2",
+                    children: [
+                      isLoading ? /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-4 h-4 animate-spin" }) : null,
+                      isLoading ? "Verifying..." : "Login"
+                    ]
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-center text-xs text-muted-foreground mt-7", children: "Protected admin area" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-center text-xs text-muted-foreground mt-5", children: /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "/", className: "hover:text-gold transition-colors", children: "← Back to home" }) })
+          ]
+        }
+      )
+    }
+  );
+}
+const features = [
+  {
+    icon: Package,
+    title: "Track Orders",
+    description: "Keep customers informed with beautiful, branded tracking pages sent directly to them."
+  },
+  {
+    icon: Link2,
+    title: "Shareable Links",
+    description: "Generate unique tracking links for each order and share them via WhatsApp, email, or DM."
+  },
+  {
+    icon: Smartphone,
+    title: "Mobile-First",
+    description: "Every page is designed for mobile — precisely where your customers will open it."
+  }
+];
+function Home() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      className: "min-h-screen",
+      style: {
+        background: "linear-gradient(160deg, #F5F0E8 0%, #EDE4D3 100%)"
+      },
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-20 bg-white/70 backdrop-blur-md border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-5xl mx-auto px-5 md:px-8 py-4 flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Gift, { className: "w-5 h-5 text-gold" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "font-display text-xl font-bold text-foreground tracking-tight", children: [
+              "gift",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Naura" })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { "aria-label": "Main navigation" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "max-w-5xl mx-auto px-5 md:px-8 pt-16 md:pt-24 pb-12 md:pb-20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            motion.div,
+            {
+              initial: { opacity: 0, y: 28 },
+              animate: { opacity: 1, y: 0 },
+              transition: { duration: 0.55, ease: [0.25, 0.46, 0.45, 0.94] },
+              className: "grid md:grid-cols-2 gap-12 items-center",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    motion.span,
+                    {
+                      initial: { opacity: 0, x: -8 },
+                      animate: { opacity: 1, x: 0 },
+                      transition: { delay: 0.15 },
+                      className: "inline-block text-xs font-semibold text-gold uppercase tracking-[0.18em] mb-5 px-3.5 py-1.5 rounded-full bg-gold/10 border border-gold/20",
+                      children: "Premium Gift Tracking"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display text-4xl md:text-5xl font-bold text-foreground leading-[1.1] mb-5", children: [
+                    "Delight every customer with",
+                    " ",
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("em", { className: "not-italic text-gold", children: "elegant" }),
+                    " tracking"
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground leading-relaxed mb-8 text-base", children: "giftNaura turns your shipments into a premium brand experience. Manage orders privately, share beautiful tracking pages, and impress your customers every time." })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  motion.div,
+                  {
+                    initial: { opacity: 0, scale: 0.93 },
+                    animate: { opacity: 1, scale: 1 },
+                    transition: { delay: 0.2, duration: 0.5 },
+                    className: "flex justify-center md:justify-end",
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "div",
+                        {
+                          className: "absolute inset-0 rounded-3xl blur-2xl opacity-30",
+                          style: { background: "#C9A84C" }
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "div",
+                        {
+                          className: "relative rounded-3xl p-5 shadow-card",
+                          style: { background: "#EDE4D3", maxWidth: 260 },
+                          children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-white rounded-2xl p-5 shadow-xs", children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "font-display text-lg font-bold text-foreground mb-0.5", children: [
+                              "gift",
+                              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Naura" })
+                            ] }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] uppercase tracking-widest text-muted-foreground mb-4", children: "Track Your Order" }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                              "div",
+                              {
+                                className: "rounded-xl p-4 mb-4 text-left",
+                                style: { background: "#F5F0E8" },
+                                children: [
+                                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-semibold text-foreground", children: "Hello, Layla!" }),
+                                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5", children: "Order #GN-2025-047" }),
+                                  /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "inline-flex items-center gap-1 mt-2 text-xs font-medium px-2.5 py-1 rounded-full bg-gold/15 text-gold border border-gold/20", children: [
+                                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-gold" }),
+                                    "Shipped"
+                                  ] })
+                                ]
+                              }
+                            ),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-gold rounded-full py-2.5 px-4 text-white text-xs font-semibold text-center shadow-gold", children: "Track Shipment →" })
+                          ] })
+                        }
+                      )
+                    ] })
+                  }
+                )
+              ]
+            }
+          ) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "max-w-5xl mx-auto px-5 md:px-8 pb-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            motion.div,
+            {
+              initial: { opacity: 0 },
+              animate: { opacity: 1 },
+              transition: { delay: 0.3 },
+              className: "grid md:grid-cols-3 gap-5",
+              children: features.map((feature, i) => {
+                const Icon2 = feature.icon;
+                return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  motion.div,
+                  {
+                    initial: { opacity: 0, y: 20 },
+                    animate: { opacity: 1, y: 0 },
+                    transition: { delay: 0.35 + i * 0.1, duration: 0.4 },
+                    className: "relative bg-white rounded-2xl p-7 shadow-card overflow-hidden",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-xl bg-gold/10 flex items-center justify-center mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "w-5 h-5 text-gold" }) }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-bold text-base text-foreground mb-2", children: feature.title }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm leading-relaxed", children: feature.description }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "div",
+                        {
+                          className: "absolute bottom-0 right-0 w-10 h-10",
+                          style: {
+                            background: "linear-gradient(135deg, transparent 60%, rgba(201,168,76,0.4) 60%)"
+                          }
+                        }
+                      )
+                    ]
+                  },
+                  feature.title
+                );
+              })
+            }
+          ) })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "border-t border-border py-7", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-center text-xs text-muted-foreground", children: [
+          "© ",
+          (/* @__PURE__ */ new Date()).getFullYear(),
+          " gift",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Naura" }),
+          ". Built with ❤️ using",
+          " ",
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "a",
+            {
+              href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`,
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "text-gold hover:underline",
+              children: "caffeine.ai"
+            }
+          )
+        ] }) })
+      ]
+    }
+  );
+}
+const STATUS_CONFIG = {
+  [OrderStatus.shipped]: {
+    label: "Shipped",
+    dot: "bg-blue-500",
+    badge: "bg-blue-50 text-blue-700 border-blue-200"
+  },
+  [OrderStatus.delivered]: {
+    label: "Delivered",
+    dot: "bg-green-500",
+    badge: "bg-green-50 text-green-700 border-green-200"
+  },
+  [OrderStatus.processing]: {
+    label: "In Transit",
+    dot: "bg-amber-500",
+    badge: "bg-amber-50 text-amber-700 border-amber-200"
+  },
+  [OrderStatus.cancelled]: {
+    label: "Cancelled",
+    dot: "bg-gray-400",
+    badge: "bg-gray-50 text-gray-600 border-gray-200"
+  }
+};
+function StatusBadge({ status }) {
+  const config = STATUS_CONFIG[status] ?? STATUS_CONFIG[OrderStatus.shipped];
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "span",
+    {
+      className: `inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-medium border ${config.badge}`,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: `w-2 h-2 rounded-full ${config.dot}` }),
+        config.label
+      ]
+    }
+  );
+}
+function TrackOrder() {
+  const { orderId } = useParams({ strict: false });
+  const { data: order, isLoading, isError } = useGetOrder(orderId ?? "");
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      className: "min-h-screen flex flex-col items-center justify-center px-4 py-12",
+      style: {
+        background: "linear-gradient(160deg, #F5F0E8 0%, #EDE4D3 100%)"
+      },
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          motion.div,
+          {
+            initial: { opacity: 0, y: -14 },
+            animate: { opacity: 1, y: 0 },
+            transition: { duration: 0.4 },
+            className: "text-center mb-8",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "img",
+                {
+                  src: "/assets/generated/giftnAura-logo-cropped.dim_440x200.png",
+                  alt: "giftNaura",
+                  className: "h-16 w-auto object-contain mx-auto mb-2",
+                  style: { maxWidth: "200px" }
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-xs uppercase tracking-[0.18em] mt-1", children: "Track Your Order" })
+            ]
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full max-w-sm", children: isLoading ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          motion.div,
+          {
+            initial: { opacity: 0, scale: 0.97 },
+            animate: { opacity: 1, scale: 1 },
+            "data-ocid": "tracking.loading_state",
+            className: "bg-white rounded-3xl shadow-card p-10 flex flex-col items-center gap-4",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-8 h-8 text-gold animate-spin" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Loading your order..." })
+            ]
+          }
+        ) : isError || !order ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          motion.div,
+          {
+            initial: { opacity: 0, scale: 0.97 },
+            animate: { opacity: 1, scale: 1 },
+            "data-ocid": "tracking.error_state",
+            className: "bg-white rounded-3xl shadow-card p-10 flex flex-col items-center gap-4 text-center",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-14 h-14 rounded-2xl bg-muted flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(PackageSearch, { className: "w-7 h-7 text-muted-foreground" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display font-bold text-lg text-foreground", children: "Order Not Found" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-1 leading-relaxed", children: "We couldn't find an order with this ID. Please check the link and try again." })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "a",
+                {
+                  href: "/",
+                  className: "text-sm font-medium text-gold hover:text-gold-hover transition-colors",
+                  children: "← Return home"
+                }
+              )
+            ]
+          }
+        ) : /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          motion.div,
+          {
+            initial: { opacity: 0, scale: 0.97 },
+            animate: { opacity: 1, scale: 1 },
+            transition: { duration: 0.4 },
+            "data-ocid": "tracking.card",
+            className: "bg-white rounded-3xl shadow-card overflow-hidden",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "div",
+                {
+                  className: "h-1.5",
+                  style: {
+                    background: "linear-gradient(90deg, #C9A84C 0%, #E8CC85 50%, #C9A84C 100%)"
+                  }
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-7", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-6", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-xs uppercase tracking-widest mb-1", children: "Hello," }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-2xl font-bold text-foreground", children: order.customerName })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "div",
+                  {
+                    className: "rounded-2xl p-4 mb-6 space-y-3",
+                    style: { background: "#F5F0E8" },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-medium", children: "Order ID" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-sm font-semibold text-foreground", children: order.orderId })
+                      ] }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px bg-border" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-medium", children: "Status" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(StatusBadge, { status: order.status })
+                      ] })
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "a",
+                  {
+                    "data-ocid": "tracking.primary_button",
+                    href: order.trackingLink,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "flex items-center justify-center gap-2 w-full bg-gold hover:bg-gold-hover text-white font-semibold py-4 px-6 rounded-full transition-colors shadow-gold text-base",
+                    children: [
+                      "Track Shipment",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { className: "w-4 h-4" })
+                    ]
+                  }
+                )
+              ] })
+            ]
+          }
+        ) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          motion.p,
+          {
+            initial: { opacity: 0 },
+            animate: { opacity: 1 },
+            transition: { delay: 0.5 },
+            className: "mt-10 text-xs text-muted-foreground text-center",
+            children: [
+              "Powered by",
+              " ",
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "a",
+                {
+                  href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  className: "text-gold hover:underline",
+                  children: "caffeine.ai"
+                }
+              )
+            ]
+          }
+        )
+      ]
+    }
+  );
+}
+const rootRoute = createRootRoute();
+const indexRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/",
+  component: Home
+});
+const adminLoginRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/admin",
+  component: AdminLogin
+});
+const adminDashboardRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/admin/dashboard",
+  component: AdminDashboard
+});
+const trackRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/track/$orderId",
+  component: TrackOrder
+});
+const notFoundRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "*",
+  component: () => /* @__PURE__ */ jsxRuntimeExports.jsx(Navigate, { to: "/" })
+});
+const routeTree = rootRoute.addChildren([
+  indexRoute,
+  adminLoginRoute,
+  adminDashboardRoute,
+  trackRoute,
+  notFoundRoute
+]);
+const router = createRouter({ routeTree });
+function App() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(RouterProvider, { router }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Toaster, { position: "top-right", richColors: true })
+  ] });
 }
 function isObject(value) {
   return value !== null && typeof value === "object";
@@ -49961,18 +51295,6 @@ async function createAuthClient(createOptions) {
   const authClient = await AuthClient.create(options);
   return authClient;
 }
-function assertProviderPresent(context) {
-  if (!context) {
-    throw new Error(
-      "InternetIdentityProvider is not present. Wrap your component tree with it."
-    );
-  }
-}
-const useInternetIdentity = () => {
-  const context = reactExports.useContext(InternetIdentityReactContext);
-  assertProviderPresent(context);
-  return context;
-};
 function InternetIdentityProvider({
   children,
   createOptions
@@ -50090,1354 +51412,6 @@ function InternetIdentityProvider({
     value,
     children
   });
-}
-const ACTOR_QUERY_KEY = "actor";
-function useActor() {
-  const { identity } = useInternetIdentity();
-  const queryClient2 = useQueryClient();
-  const actorQuery = useQuery({
-    queryKey: [ACTOR_QUERY_KEY, identity == null ? void 0 : identity.getPrincipal().toString()],
-    queryFn: async () => {
-      const isAuthenticated = !!identity;
-      if (!isAuthenticated) {
-        return await createActorWithConfig();
-      }
-      const actorOptions = {
-        agentOptions: {
-          identity
-        }
-      };
-      const actor = await createActorWithConfig(actorOptions);
-      const adminToken = getSecretParameter("caffeineAdminToken") || "";
-      await actor._initializeAccessControlWithSecret(adminToken);
-      return actor;
-    },
-    // Only refetch when identity changes
-    staleTime: Number.POSITIVE_INFINITY,
-    // This will cause the actor to be recreated when the identity changes
-    enabled: true
-  });
-  reactExports.useEffect(() => {
-    if (actorQuery.data) {
-      queryClient2.invalidateQueries({
-        predicate: (query) => {
-          return !query.queryKey.includes(ACTOR_QUERY_KEY);
-        }
-      });
-      queryClient2.refetchQueries({
-        predicate: (query) => {
-          return !query.queryKey.includes(ACTOR_QUERY_KEY);
-        }
-      });
-    }
-  }, [actorQuery.data, queryClient2]);
-  return {
-    actor: actorQuery.data || null,
-    isFetching: actorQuery.isFetching
-  };
-}
-function useGetAllOrders() {
-  const { actor, isFetching } = useActor();
-  return useQuery({
-    queryKey: ["orders"],
-    queryFn: async () => {
-      if (!actor) return [];
-      return actor.getAllOrders();
-    },
-    enabled: !!actor && !isFetching
-  });
-}
-function useGetOrder(orderId) {
-  const { actor, isFetching } = useActor();
-  return useQuery({
-    queryKey: ["order", orderId],
-    queryFn: async () => {
-      if (!actor || !orderId) return null;
-      try {
-        return await actor.getOrder(orderId);
-      } catch {
-        return null;
-      }
-    },
-    enabled: !!actor && !isFetching && !!orderId,
-    retry: false
-  });
-}
-function useCreateOrder() {
-  const { actor } = useActor();
-  const queryClient2 = useQueryClient();
-  return useMutation({
-    mutationFn: async (order) => {
-      if (!actor) throw new Error("Not connected");
-      await actor.createOrder(order);
-    },
-    onSuccess: () => {
-      queryClient2.invalidateQueries({ queryKey: ["orders"] });
-    }
-  });
-}
-function useDeleteOrder() {
-  const { actor } = useActor();
-  const queryClient2 = useQueryClient();
-  return useMutation({
-    mutationFn: async (orderId) => {
-      if (!actor) throw new Error("Not connected");
-      await actor.deleteOrder(orderId);
-    },
-    onSuccess: () => {
-      queryClient2.invalidateQueries({ queryKey: ["orders"] });
-    }
-  });
-}
-function useUpdateOrderStatus() {
-  const { actor } = useActor();
-  const queryClient2 = useQueryClient();
-  return useMutation({
-    mutationFn: async ({
-      orderId,
-      status
-    }) => {
-      if (!actor) throw new Error("Not connected");
-      await actor.updateOrderStatus(orderId, status);
-    },
-    onSuccess: () => {
-      queryClient2.invalidateQueries({ queryKey: ["orders"] });
-    }
-  });
-}
-function formatDate(createdAt) {
-  return new Date(Number(createdAt / 1000000n)).toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric"
-  });
-}
-const STATUS_CONFIG$1 = {
-  [OrderStatus.shipped]: {
-    label: "Shipped",
-    dot: "bg-blue-500",
-    badge: "bg-blue-50 text-blue-700 border-blue-200"
-  },
-  [OrderStatus.delivered]: {
-    label: "Delivered",
-    dot: "bg-green-500",
-    badge: "bg-green-50 text-green-700 border-green-200"
-  },
-  [OrderStatus.processing]: {
-    label: "In Transit",
-    dot: "bg-amber-500",
-    badge: "bg-amber-50 text-amber-700 border-amber-200"
-  },
-  [OrderStatus.cancelled]: {
-    label: "Cancelled",
-    dot: "bg-gray-400",
-    badge: "bg-gray-50 text-gray-600 border-gray-200"
-  }
-};
-function StatusBadge$1({ status }) {
-  const config = STATUS_CONFIG$1[status] ?? STATUS_CONFIG$1[OrderStatus.shipped];
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "span",
-    {
-      className: `inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium border ${config.badge}`,
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: `w-1.5 h-1.5 rounded-full ${config.dot}` }),
-        config.label
-      ]
-    }
-  );
-}
-function OrderCard({
-  order,
-  index: index2,
-  onDelete,
-  onEdit
-}) {
-  const trackingUrl = `${window.location.origin}/track/${order.orderId}`;
-  function copyLink() {
-    navigator.clipboard.writeText(trackingUrl);
-    ue.success("Tracking link copied!");
-  }
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    motion.div,
-    {
-      layout: true,
-      initial: { opacity: 0, y: 14 },
-      animate: { opacity: 1, y: 0 },
-      exit: { opacity: 0, scale: 0.97, y: -8 },
-      transition: { duration: 0.25 },
-      "data-ocid": `orders.item.${index2}`,
-      className: "bg-white rounded-2xl shadow-card p-5 hover:shadow-card-hover transition-shadow",
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between gap-3 mb-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0 flex-1", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-foreground truncate text-sm", children: order.customerName }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono font-medium text-foreground/70", children: order.orderId }) })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(StatusBadge$1, { status: order.status })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mb-4", children: formatDate(order.createdAt) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 flex-wrap", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "button",
-            {
-              type: "button",
-              "data-ocid": `orders.edit_button.${index2}`,
-              onClick: () => onEdit(order),
-              className: "flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-muted hover:bg-border text-foreground transition-colors",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Pencil, { className: "w-3 h-3" }),
-                "Edit"
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "button",
-            {
-              type: "button",
-              "data-ocid": `orders.secondary_button.${index2}`,
-              onClick: copyLink,
-              className: "flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-gold/10 hover:bg-gold/20 text-gold transition-colors",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "w-3 h-3" }),
-                "Copy Link"
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(AlertDialog, { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(AlertDialogTrigger, { asChild: true, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "button",
-              {
-                type: "button",
-                "data-ocid": `orders.delete_button.${index2}`,
-                className: "flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-destructive/10 hover:bg-destructive/20 text-destructive transition-colors ml-auto",
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Trash2, { className: "w-3 h-3" }),
-                  "Delete"
-                ]
-              }
-            ) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(AlertDialogContent, { "data-ocid": "orders.dialog", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(AlertDialogHeader, { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(AlertDialogTitle, { children: "Delete this order?" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(AlertDialogDescription, { children: [
-                  "This will permanently remove the tracking page for",
-                  " ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: order.customerName }),
-                  " (Order",
-                  " ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("code", { children: order.orderId }),
-                  "). This action cannot be undone."
-                ] })
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(AlertDialogFooter, { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(AlertDialogCancel, { "data-ocid": "orders.cancel_button", children: "Cancel" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  AlertDialogAction,
-                  {
-                    "data-ocid": "orders.confirm_button",
-                    onClick: () => onDelete(order.orderId),
-                    className: "bg-destructive text-white hover:bg-destructive/90",
-                    children: "Delete Order"
-                  }
-                )
-              ] })
-            ] })
-          ] })
-        ] })
-      ]
-    }
-  );
-}
-function AdminDashboard() {
-  const navigate = useNavigate();
-  const { clear, identity, isInitializing } = useInternetIdentity();
-  const { actor, isFetching: actorLoading } = useActor();
-  const isAuthenticated = !!identity;
-  const [adminVerified, setAdminVerified] = reactExports.useState(false);
-  const [adminCheckDone, setAdminCheckDone] = reactExports.useState(false);
-  reactExports.useEffect(() => {
-    if (!isInitializing && !isAuthenticated) {
-      navigate({ to: "/admin", replace: true });
-    }
-  }, [isAuthenticated, isInitializing, navigate]);
-  reactExports.useEffect(() => {
-    if (!actor || actorLoading || adminCheckDone) return;
-    actor.isCallerAdmin().then((isAdmin) => {
-      setAdminCheckDone(true);
-      if (!isAdmin) {
-        navigate({ to: "/admin", replace: true });
-      } else {
-        setAdminVerified(true);
-      }
-    }).catch(() => {
-      setAdminCheckDone(true);
-      navigate({ to: "/admin", replace: true });
-    });
-  }, [actor, actorLoading, adminCheckDone, navigate]);
-  const [customerName, setCustomerName] = reactExports.useState("");
-  const [orderId, setOrderId] = reactExports.useState("");
-  const [trackingLink, setTrackingLink] = reactExports.useState("");
-  const [status, setStatus] = reactExports.useState(OrderStatus.shipped);
-  const [createdOrderId, setCreatedOrderId] = reactExports.useState(null);
-  const [editState, setEditState] = reactExports.useState({
-    order: {
-      customerName: "",
-      orderId: "",
-      trackingLink: "",
-      status: OrderStatus.shipped,
-      createdAt: 0n
-    },
-    open: false
-  });
-  const [editCustomerName, setEditCustomerName] = reactExports.useState("");
-  const [editTrackingLink, setEditTrackingLink] = reactExports.useState("");
-  const [editStatus, setEditStatus] = reactExports.useState(
-    OrderStatus.shipped
-  );
-  const [search, setSearch] = reactExports.useState("");
-  const { data: orders = [], isLoading: ordersLoading } = useGetAllOrders();
-  const createOrder = useCreateOrder();
-  const deleteOrder = useDeleteOrder();
-  const updateStatus = useUpdateOrderStatus();
-  const filteredOrders = orders.filter(
-    (o2) => o2.customerName.toLowerCase().includes(search.toLowerCase()) || o2.orderId.toLowerCase().includes(search.toLowerCase())
-  );
-  function openEdit(order) {
-    setEditState({ order, open: true });
-    setEditCustomerName(order.customerName);
-    setEditTrackingLink(order.trackingLink);
-    setEditStatus(order.status);
-  }
-  function closeEdit() {
-    setEditState((prev) => ({ ...prev, open: false }));
-  }
-  async function handleSaveEdit() {
-    if (!editCustomerName.trim() || !editTrackingLink.trim()) {
-      ue.error("Please fill in all fields");
-      return;
-    }
-    updateStatus.mutate(
-      { orderId: editState.order.orderId, status: editStatus },
-      {
-        onSuccess: () => {
-          if (editCustomerName.trim() !== editState.order.customerName || editTrackingLink.trim() !== editState.order.trackingLink) {
-            deleteOrder.mutate(editState.order.orderId, {
-              onSuccess: () => {
-                createOrder.mutate(
-                  {
-                    customerName: editCustomerName.trim(),
-                    orderId: editState.order.orderId,
-                    trackingLink: editTrackingLink.trim(),
-                    status: editStatus,
-                    createdAt: editState.order.createdAt
-                  },
-                  {
-                    onSuccess: () => {
-                      ue.success("Order updated!");
-                      closeEdit();
-                    },
-                    onError: (err) => ue.error(
-                      err instanceof Error ? err.message : "Failed to update order"
-                    )
-                  }
-                );
-              },
-              onError: (err) => ue.error(
-                err instanceof Error ? err.message : "Failed to update order"
-              )
-            });
-          } else {
-            ue.success("Status updated!");
-            closeEdit();
-          }
-        },
-        onError: (err) => ue.error(
-          err instanceof Error ? err.message : "Failed to update status"
-        )
-      }
-    );
-  }
-  async function handleCreateOrder(e) {
-    e.preventDefault();
-    if (!customerName.trim() || !orderId.trim() || !trackingLink.trim()) {
-      ue.error("Please fill in all fields");
-      return;
-    }
-    const newOrder = {
-      customerName: customerName.trim(),
-      orderId: orderId.trim(),
-      trackingLink: trackingLink.trim(),
-      status,
-      createdAt: BigInt(Date.now()) * 1000000n
-    };
-    createOrder.mutate(newOrder, {
-      onSuccess: () => {
-        setCreatedOrderId(orderId.trim());
-        setCustomerName("");
-        setOrderId("");
-        setTrackingLink("");
-        setStatus(OrderStatus.shipped);
-        ue.success("Tracking page created!");
-      },
-      onError: (err) => {
-        ue.error(
-          err instanceof Error ? err.message : "Failed to create order"
-        );
-      }
-    });
-  }
-  function handleDelete(id2) {
-    deleteOrder.mutate(id2, {
-      onSuccess: () => ue.success("Order deleted"),
-      onError: (err) => ue.error(
-        err instanceof Error ? err.message : "Failed to delete order"
-      )
-    });
-  }
-  function handleLogout() {
-    clear();
-    navigate({ to: "/admin", replace: true });
-  }
-  function copyCreatedLink() {
-    if (!createdOrderId) return;
-    navigator.clipboard.writeText(
-      `${window.location.origin}/track/${createdOrderId}`
-    );
-    ue.success("Link copied!");
-  }
-  if (!adminVerified || isInitializing) {
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(
-      "div",
-      {
-        className: "min-h-screen flex items-center justify-center",
-        style: {
-          background: "linear-gradient(160deg, #F5F0E8 0%, #EDE4D3 100%)"
-        },
-        "data-ocid": "admin.loading_state",
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-8 h-8 text-gold animate-spin" })
-      }
-    );
-  }
-  const isSavingEdit = updateStatus.isPending || deleteOrder.isPending || createOrder.isPending;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      className: "min-h-screen",
-      style: {
-        background: "linear-gradient(160deg, #F5F0E8 0%, #EDE4D3 100%)"
-      },
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-20 bg-white/80 backdrop-blur-md border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-4xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "img",
-            {
-              src: "/assets/generated/giftnAura-logo-cropped.dim_440x200.png",
-              alt: "giftNaura",
-              className: "h-10 w-auto object-contain",
-              style: { maxWidth: "140px" }
-            }
-          ) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "button",
-            {
-              type: "button",
-              "data-ocid": "admin.secondary_button",
-              onClick: handleLogout,
-              className: "flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(LogOut, { className: "w-4 h-4" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "hidden sm:inline", children: "Logout" })
-              ]
-            }
-          )
-        ] }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "max-w-4xl mx-auto px-4 md:px-8 py-8 space-y-8", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            motion.section,
-            {
-              initial: { opacity: 0, y: 16 },
-              animate: { opacity: 1, y: 0 },
-              transition: { duration: 0.4 },
-              className: "bg-white rounded-3xl shadow-card p-6 md:p-8",
-              "data-ocid": "admin.panel",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-6", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-xl bg-gold/10 flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-5 h-5 text-gold" }) }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display font-bold text-lg text-foreground", children: "Add New Order" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Create a tracking page for a customer" })
-                  ] })
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("form", { onSubmit: handleCreateOrder, className: "space-y-4", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-cols-2 gap-4", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        Label,
-                        {
-                          htmlFor: "customerName",
-                          className: "text-sm font-medium text-foreground",
-                          children: "Customer Name"
-                        }
-                      ),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        Input,
-                        {
-                          "data-ocid": "order.input",
-                          id: "customerName",
-                          value: customerName,
-                          onChange: (e) => setCustomerName(e.target.value),
-                          placeholder: "e.g. Layla Al-Rashid",
-                          className: "rounded-xl border-border",
-                          autoComplete: "off"
-                        }
-                      )
-                    ] }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        Label,
-                        {
-                          htmlFor: "orderId",
-                          className: "text-sm font-medium text-foreground",
-                          children: "Order ID"
-                        }
-                      ),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        Input,
-                        {
-                          "data-ocid": "order.input",
-                          id: "orderId",
-                          value: orderId,
-                          onChange: (e) => setOrderId(e.target.value),
-                          placeholder: "e.g. GN-2025-047",
-                          className: "rounded-xl border-border",
-                          autoComplete: "off"
-                        }
-                      )
-                    ] })
-                  ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      Label,
-                      {
-                        htmlFor: "trackingLink",
-                        className: "text-sm font-medium text-foreground",
-                        children: "Tracking URL (shipping partner link)"
-                      }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      Input,
-                      {
-                        "data-ocid": "order.input",
-                        id: "trackingLink",
-                        type: "url",
-                        value: trackingLink,
-                        onChange: (e) => setTrackingLink(e.target.value),
-                        placeholder: "https://tracking.aramex.com/...",
-                        className: "rounded-xl border-border",
-                        autoComplete: "off"
-                      }
-                    )
-                  ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      Label,
-                      {
-                        htmlFor: "status-select",
-                        className: "text-sm font-medium text-foreground",
-                        children: "Initial Status"
-                      }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                      Select,
-                      {
-                        value: status,
-                        onValueChange: (val) => setStatus(val),
-                        children: [
-                          /* @__PURE__ */ jsxRuntimeExports.jsx(
-                            SelectTrigger,
-                            {
-                              id: "status-select",
-                              "data-ocid": "order.select",
-                              className: "rounded-xl border-border w-full md:w-[200px]",
-                              children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, {})
-                            }
-                          ),
-                          /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
-                            /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.processing, children: "In Transit" }),
-                            /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.shipped, children: "Shipped" }),
-                            /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.delivered, children: "Delivered" }),
-                            /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.cancelled, children: "Cancelled" })
-                          ] })
-                        ]
-                      }
-                    )
-                  ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-3 pt-2", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                    "button",
-                    {
-                      "data-ocid": "order.submit_button",
-                      type: "submit",
-                      disabled: createOrder.isPending,
-                      className: "flex items-center gap-2 bg-gold hover:bg-gold-hover text-white font-semibold py-2.5 px-6 rounded-full transition-colors shadow-gold disabled:opacity-60 disabled:cursor-not-allowed text-sm",
-                      children: [
-                        createOrder.isPending ? /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-4 h-4 animate-spin" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-4 h-4" }),
-                        createOrder.isPending ? "Saving..." : "Save Order"
-                      ]
-                    }
-                  ) })
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { children: createdOrderId && /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  motion.div,
-                  {
-                    initial: { opacity: 0, y: 8 },
-                    animate: { opacity: 1, y: 0 },
-                    exit: { opacity: 0, y: -8 },
-                    "data-ocid": "order.success_state",
-                    className: "mt-5 p-4 rounded-2xl bg-green-50 border border-green-200 flex items-start gap-3",
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
-                        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-semibold text-green-800", children: "Tracking page created!" }),
-                        /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-green-700 mt-1 font-mono break-all", children: [
-                          window.location.origin,
-                          "/track/",
-                          createdOrderId
-                        ] })
-                      ] }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                        "button",
-                        {
-                          type: "button",
-                          "data-ocid": "order.secondary_button",
-                          onClick: copyCreatedLink,
-                          className: "flex-shrink-0 flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-white border border-green-300 text-green-700 hover:bg-green-50 transition-colors",
-                          children: [
-                            /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "w-3 h-3" }),
-                            "Copy"
-                          ]
-                        }
-                      )
-                    ]
-                  }
-                ) })
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            motion.section,
-            {
-              initial: { opacity: 0, y: 16 },
-              animate: { opacity: 1, y: 0 },
-              transition: { duration: 0.4, delay: 0.1 },
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display font-bold text-xl text-foreground", children: [
-                  "All Orders",
-                  orders.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "ml-2 text-sm font-body font-normal text-muted-foreground", children: [
-                    "(",
-                    filteredOrders.length,
-                    ")"
-                  ] })
-                ] }) }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mb-5", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Search, { className: "absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    Input,
-                    {
-                      "data-ocid": "admin.search_input",
-                      value: search,
-                      onChange: (e) => setSearch(e.target.value),
-                      placeholder: "Search by name or order ID...",
-                      className: "pl-11 rounded-full border-border bg-white shadow-xs"
-                    }
-                  )
-                ] }),
-                ordersLoading ? /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "div",
-                  {
-                    "data-ocid": "orders.loading_state",
-                    className: "flex items-center justify-center py-16",
-                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-8 h-8 text-gold animate-spin" })
-                  }
-                ) : filteredOrders.length === 0 ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  motion.div,
-                  {
-                    initial: { opacity: 0 },
-                    animate: { opacity: 1 },
-                    "data-ocid": "orders.empty_state",
-                    className: "bg-white rounded-3xl shadow-card p-12 text-center",
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Package2, { className: "w-6 h-6 text-gold" }) }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display font-bold text-lg text-foreground mb-1", children: search ? "No orders found" : "No orders yet" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: search ? "Try a different search term" : "Add your first order above to get started" })
-                    ]
-                  }
-                ) : /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid sm:grid-cols-2 gap-4", "data-ocid": "orders.list", children: /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { children: filteredOrders.map((order, index2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  OrderCard,
-                  {
-                    order,
-                    index: index2 + 1,
-                    onDelete: handleDelete,
-                    onEdit: openEdit
-                  },
-                  order.orderId
-                )) }) })
-              ]
-            }
-          )
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Dialog,
-          {
-            open: editState.open,
-            onOpenChange: (open) => {
-              if (!open) closeEdit();
-            },
-            children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              DialogContent,
-              {
-                "data-ocid": "orders.dialog",
-                className: "rounded-3xl max-w-md",
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(DialogHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { className: "font-display text-lg", children: "Edit Order" }) }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 pt-2", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { className: "text-sm font-medium text-foreground", children: "Customer Name" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        Input,
-                        {
-                          "data-ocid": "edit.input",
-                          value: editCustomerName,
-                          onChange: (e) => setEditCustomerName(e.target.value),
-                          className: "rounded-xl border-border",
-                          autoComplete: "off"
-                        }
-                      )
-                    ] }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { className: "text-sm font-medium text-foreground", children: "Order ID" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        Input,
-                        {
-                          value: editState.order.orderId,
-                          disabled: true,
-                          className: "rounded-xl border-border bg-muted/50 text-muted-foreground"
-                        }
-                      )
-                    ] }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { className: "text-sm font-medium text-foreground", children: "Tracking URL" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        Input,
-                        {
-                          "data-ocid": "edit.input",
-                          type: "url",
-                          value: editTrackingLink,
-                          onChange: (e) => setEditTrackingLink(e.target.value),
-                          className: "rounded-xl border-border",
-                          autoComplete: "off"
-                        }
-                      )
-                    ] }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { className: "text-sm font-medium text-foreground", children: "Status" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                        Select,
-                        {
-                          value: editStatus,
-                          onValueChange: (val) => setEditStatus(val),
-                          children: [
-                            /* @__PURE__ */ jsxRuntimeExports.jsx(
-                              SelectTrigger,
-                              {
-                                "data-ocid": "edit.select",
-                                className: "rounded-xl border-border w-full",
-                                children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, {})
-                              }
-                            ),
-                            /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
-                              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.processing, children: "In Transit" }),
-                              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.shipped, children: "Shipped" }),
-                              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.delivered, children: "Delivered" }),
-                              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: OrderStatus.cancelled, children: "Cancelled" })
-                            ] })
-                          ]
-                        }
-                      )
-                    ] }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-3 pt-2", children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "button",
-                        {
-                          type: "button",
-                          "data-ocid": "edit.cancel_button",
-                          onClick: closeEdit,
-                          className: "flex-1 py-2.5 px-4 rounded-full border-2 border-border text-sm font-medium text-foreground hover:bg-muted transition-colors",
-                          children: "Cancel"
-                        }
-                      ),
-                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                        "button",
-                        {
-                          type: "button",
-                          "data-ocid": "edit.save_button",
-                          onClick: handleSaveEdit,
-                          disabled: isSavingEdit,
-                          className: "flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-full bg-gold hover:bg-gold-hover text-white text-sm font-semibold shadow-gold disabled:opacity-60 disabled:cursor-not-allowed transition-colors",
-                          children: [
-                            isSavingEdit ? /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-4 h-4 animate-spin" }) : null,
-                            isSavingEdit ? "Saving..." : "Save Changes"
-                          ]
-                        }
-                      )
-                    ] })
-                  ] })
-                ]
-              }
-            )
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "mt-16 py-6 border-t border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-center text-xs text-muted-foreground", children: [
-          "© ",
-          (/* @__PURE__ */ new Date()).getFullYear(),
-          " gift",
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Naura" }),
-          ". Built with ❤️ using",
-          " ",
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "a",
-            {
-              href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`,
-              target: "_blank",
-              rel: "noopener noreferrer",
-              className: "text-gold hover:underline",
-              children: "caffeine.ai"
-            }
-          )
-        ] }) })
-      ]
-    }
-  );
-}
-function AdminLogin() {
-  const navigate = useNavigate();
-  const { login, clear, identity, isLoggingIn, isInitializing } = useInternetIdentity();
-  const { actor, isFetching } = useActor();
-  const [adminCheckDone, setAdminCheckDone] = reactExports.useState(false);
-  const [isAdmin, setIsAdmin] = reactExports.useState(false);
-  const [checkingAdmin, setCheckingAdmin] = reactExports.useState(false);
-  const isAuthenticated = !!identity;
-  reactExports.useEffect(() => {
-    if (!isAuthenticated || !actor || isFetching || adminCheckDone) return;
-    setCheckingAdmin(true);
-    actor.isCallerAdmin().then((result) => {
-      setIsAdmin(result);
-      setAdminCheckDone(true);
-      setCheckingAdmin(false);
-      if (result) {
-        navigate({ to: "/admin/dashboard", replace: true });
-      }
-    }).catch(() => {
-      setAdminCheckDone(true);
-      setCheckingAdmin(false);
-    });
-  }, [isAuthenticated, actor, isFetching, adminCheckDone, navigate]);
-  const isLoading = isLoggingIn || isInitializing || isFetching || checkingAdmin;
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "div",
-    {
-      className: "min-h-screen flex flex-col items-center justify-center px-4 py-12",
-      style: {
-        background: "linear-gradient(160deg, #F5F0E8 0%, #EDE4D3 100%)"
-      },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-        motion.div,
-        {
-          initial: { opacity: 0, scale: 0.96 },
-          animate: { opacity: 1, scale: 1 },
-          transition: { duration: 0.35 },
-          className: "w-full max-w-sm",
-          children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-white rounded-3xl shadow-card p-8 md:p-10", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-8", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "img",
-                  {
-                    src: "/assets/generated/giftnAura-logo-cropped.dim_440x200.png",
-                    alt: "giftNaura",
-                    className: "h-20 w-auto object-contain mx-auto mb-4",
-                    style: { maxWidth: "220px" }
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm", children: "Admin Portal" })
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-8", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-1 h-px bg-border" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] text-gold font-semibold uppercase tracking-[0.18em]", children: "Secure Login" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-1 h-px bg-border" })
-              ] }),
-              isAuthenticated && adminCheckDone && !isAdmin && /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                motion.div,
-                {
-                  initial: { opacity: 0, y: 8 },
-                  animate: { opacity: 1, y: 0 },
-                  "data-ocid": "login.error_state",
-                  className: "mb-6 p-4 rounded-2xl bg-destructive/8 border border-destructive/20 flex gap-3",
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(ShieldAlert, { className: "w-5 h-5 text-destructive flex-shrink-0 mt-0.5" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-semibold text-destructive", children: "Access Denied" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-destructive/70 mt-1 leading-relaxed", children: "This portal is for administrators only. Your account does not have admin privileges." })
-                    ] })
-                  ]
-                }
-              ),
-              !isAuthenticated || adminCheckDone && !isAdmin ? /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3", children: [
-                !isAuthenticated && /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "button",
-                  {
-                    type: "button",
-                    "data-ocid": "login.primary_button",
-                    onClick: login,
-                    disabled: isLoading,
-                    className: "w-full flex items-center justify-center gap-2 bg-gold hover:bg-gold-hover text-white font-semibold py-3.5 px-6 rounded-full transition-colors shadow-gold disabled:opacity-60 disabled:cursor-not-allowed text-sm",
-                    children: [
-                      isLoading ? /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-4 h-4 animate-spin" }) : null,
-                      isLoading ? "Connecting..." : "Login with Internet Identity"
-                    ]
-                  }
-                ),
-                isAuthenticated && adminCheckDone && !isAdmin && /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "button",
-                  {
-                    type: "button",
-                    "data-ocid": "login.secondary_button",
-                    onClick: clear,
-                    className: "w-full flex items-center justify-center gap-2 bg-white border-2 border-gold text-gold hover:bg-gold/5 font-semibold py-3.5 px-6 rounded-full transition-colors text-sm",
-                    children: "Try a Different Account"
-                  }
-                )
-              ] }) : /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "div",
-                {
-                  "data-ocid": "login.loading_state",
-                  className: "flex items-center justify-center py-5",
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-5 h-5 text-gold animate-spin" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "ml-3 text-muted-foreground text-sm", children: "Verifying access..." })
-                  ]
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-center text-xs text-muted-foreground mt-7", children: "Protected by Internet Identity" })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-center text-xs text-muted-foreground mt-5", children: /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "/", className: "hover:text-gold transition-colors", children: "← Back to home" }) })
-          ]
-        }
-      )
-    }
-  );
-}
-const features = [
-  {
-    icon: Package,
-    title: "Track Orders",
-    description: "Keep customers informed with beautiful, branded tracking pages sent directly to them."
-  },
-  {
-    icon: Link2,
-    title: "Shareable Links",
-    description: "Generate unique tracking links for each order and share them via WhatsApp, email, or DM."
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile-First",
-    description: "Every page is designed for mobile — precisely where your customers will open it."
-  }
-];
-function Home() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      className: "min-h-screen",
-      style: {
-        background: "linear-gradient(160deg, #F5F0E8 0%, #EDE4D3 100%)"
-      },
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-20 bg-white/70 backdrop-blur-md border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-5xl mx-auto px-5 md:px-8 py-4 flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Gift, { className: "w-5 h-5 text-gold" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "font-display text-xl font-bold text-foreground tracking-tight", children: [
-              "gift",
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Naura" })
-            ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { "aria-label": "Main navigation" })
-        ] }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "max-w-5xl mx-auto px-5 md:px-8 pt-16 md:pt-24 pb-12 md:pb-20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            motion.div,
-            {
-              initial: { opacity: 0, y: 28 },
-              animate: { opacity: 1, y: 0 },
-              transition: { duration: 0.55, ease: [0.25, 0.46, 0.45, 0.94] },
-              className: "grid md:grid-cols-2 gap-12 items-center",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    motion.span,
-                    {
-                      initial: { opacity: 0, x: -8 },
-                      animate: { opacity: 1, x: 0 },
-                      transition: { delay: 0.15 },
-                      className: "inline-block text-xs font-semibold text-gold uppercase tracking-[0.18em] mb-5 px-3.5 py-1.5 rounded-full bg-gold/10 border border-gold/20",
-                      children: "Premium Gift Tracking"
-                    }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display text-4xl md:text-5xl font-bold text-foreground leading-[1.1] mb-5", children: [
-                    "Delight every customer with",
-                    " ",
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("em", { className: "not-italic text-gold", children: "elegant" }),
-                    " tracking"
-                  ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground leading-relaxed mb-8 text-base", children: "giftNaura turns your shipments into a premium brand experience. Manage orders privately, share beautiful tracking pages, and impress your customers every time." })
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  motion.div,
-                  {
-                    initial: { opacity: 0, scale: 0.93 },
-                    animate: { opacity: 1, scale: 1 },
-                    transition: { delay: 0.2, duration: 0.5 },
-                    className: "flex justify-center md:justify-end",
-                    children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "div",
-                        {
-                          className: "absolute inset-0 rounded-3xl blur-2xl opacity-30",
-                          style: { background: "#C9A84C" }
-                        }
-                      ),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "div",
-                        {
-                          className: "relative rounded-3xl p-5 shadow-card",
-                          style: { background: "#EDE4D3", maxWidth: 260 },
-                          children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-white rounded-2xl p-5 shadow-xs", children: [
-                            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "font-display text-lg font-bold text-foreground mb-0.5", children: [
-                              "gift",
-                              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Naura" })
-                            ] }),
-                            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] uppercase tracking-widest text-muted-foreground mb-4", children: "Track Your Order" }),
-                            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                              "div",
-                              {
-                                className: "rounded-xl p-4 mb-4 text-left",
-                                style: { background: "#F5F0E8" },
-                                children: [
-                                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-semibold text-foreground", children: "Hello, Layla!" }),
-                                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5", children: "Order #GN-2025-047" }),
-                                  /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "inline-flex items-center gap-1 mt-2 text-xs font-medium px-2.5 py-1 rounded-full bg-gold/15 text-gold border border-gold/20", children: [
-                                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-gold" }),
-                                    "Shipped"
-                                  ] })
-                                ]
-                              }
-                            ),
-                            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-gold rounded-full py-2.5 px-4 text-white text-xs font-semibold text-center shadow-gold", children: "Track Shipment →" })
-                          ] })
-                        }
-                      )
-                    ] })
-                  }
-                )
-              ]
-            }
-          ) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "max-w-5xl mx-auto px-5 md:px-8 pb-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-            motion.div,
-            {
-              initial: { opacity: 0 },
-              animate: { opacity: 1 },
-              transition: { delay: 0.3 },
-              className: "grid md:grid-cols-3 gap-5",
-              children: features.map((feature, i) => {
-                const Icon2 = feature.icon;
-                return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  motion.div,
-                  {
-                    initial: { opacity: 0, y: 20 },
-                    animate: { opacity: 1, y: 0 },
-                    transition: { delay: 0.35 + i * 0.1, duration: 0.4 },
-                    className: "relative bg-white rounded-2xl p-7 shadow-card overflow-hidden",
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-xl bg-gold/10 flex items-center justify-center mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "w-5 h-5 text-gold" }) }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-bold text-base text-foreground mb-2", children: feature.title }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm leading-relaxed", children: feature.description }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "div",
-                        {
-                          className: "absolute bottom-0 right-0 w-10 h-10",
-                          style: {
-                            background: "linear-gradient(135deg, transparent 60%, rgba(201,168,76,0.4) 60%)"
-                          }
-                        }
-                      )
-                    ]
-                  },
-                  feature.title
-                );
-              })
-            }
-          ) })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "border-t border-border py-7", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-center text-xs text-muted-foreground", children: [
-          "© ",
-          (/* @__PURE__ */ new Date()).getFullYear(),
-          " gift",
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Naura" }),
-          ". Built with ❤️ using",
-          " ",
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "a",
-            {
-              href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`,
-              target: "_blank",
-              rel: "noopener noreferrer",
-              className: "text-gold hover:underline",
-              children: "caffeine.ai"
-            }
-          )
-        ] }) })
-      ]
-    }
-  );
-}
-const STATUS_CONFIG = {
-  [OrderStatus.shipped]: {
-    label: "Shipped",
-    dot: "bg-blue-500",
-    badge: "bg-blue-50 text-blue-700 border-blue-200"
-  },
-  [OrderStatus.delivered]: {
-    label: "Delivered",
-    dot: "bg-green-500",
-    badge: "bg-green-50 text-green-700 border-green-200"
-  },
-  [OrderStatus.processing]: {
-    label: "In Transit",
-    dot: "bg-amber-500",
-    badge: "bg-amber-50 text-amber-700 border-amber-200"
-  },
-  [OrderStatus.cancelled]: {
-    label: "Cancelled",
-    dot: "bg-gray-400",
-    badge: "bg-gray-50 text-gray-600 border-gray-200"
-  }
-};
-function StatusBadge({ status }) {
-  const config = STATUS_CONFIG[status] ?? STATUS_CONFIG[OrderStatus.shipped];
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "span",
-    {
-      className: `inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-medium border ${config.badge}`,
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: `w-2 h-2 rounded-full ${config.dot}` }),
-        config.label
-      ]
-    }
-  );
-}
-function TrackOrder() {
-  const { orderId } = useParams({ strict: false });
-  const { data: order, isLoading, isError } = useGetOrder(orderId ?? "");
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      className: "min-h-screen flex flex-col items-center justify-center px-4 py-12",
-      style: {
-        background: "linear-gradient(160deg, #F5F0E8 0%, #EDE4D3 100%)"
-      },
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          motion.div,
-          {
-            initial: { opacity: 0, y: -14 },
-            animate: { opacity: 1, y: 0 },
-            transition: { duration: 0.4 },
-            className: "text-center mb-8",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "img",
-                {
-                  src: "/assets/generated/giftnAura-logo-cropped.dim_440x200.png",
-                  alt: "giftNaura",
-                  className: "h-16 w-auto object-contain mx-auto mb-2",
-                  style: { maxWidth: "200px" }
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-xs uppercase tracking-[0.18em] mt-1", children: "Track Your Order" })
-            ]
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full max-w-sm", children: isLoading ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          motion.div,
-          {
-            initial: { opacity: 0, scale: 0.97 },
-            animate: { opacity: 1, scale: 1 },
-            "data-ocid": "tracking.loading_state",
-            className: "bg-white rounded-3xl shadow-card p-10 flex flex-col items-center gap-4",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-8 h-8 text-gold animate-spin" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Loading your order..." })
-            ]
-          }
-        ) : isError || !order ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          motion.div,
-          {
-            initial: { opacity: 0, scale: 0.97 },
-            animate: { opacity: 1, scale: 1 },
-            "data-ocid": "tracking.error_state",
-            className: "bg-white rounded-3xl shadow-card p-10 flex flex-col items-center gap-4 text-center",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-14 h-14 rounded-2xl bg-muted flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(PackageSearch, { className: "w-7 h-7 text-muted-foreground" }) }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display font-bold text-lg text-foreground", children: "Order Not Found" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-1 leading-relaxed", children: "We couldn't find an order with this ID. Please check the link and try again." })
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "a",
-                {
-                  href: "/",
-                  className: "text-sm font-medium text-gold hover:text-gold-hover transition-colors",
-                  children: "← Return home"
-                }
-              )
-            ]
-          }
-        ) : /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          motion.div,
-          {
-            initial: { opacity: 0, scale: 0.97 },
-            animate: { opacity: 1, scale: 1 },
-            transition: { duration: 0.4 },
-            "data-ocid": "tracking.card",
-            className: "bg-white rounded-3xl shadow-card overflow-hidden",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "div",
-                {
-                  className: "h-1.5",
-                  style: {
-                    background: "linear-gradient(90deg, #C9A84C 0%, #E8CC85 50%, #C9A84C 100%)"
-                  }
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-7", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-6", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-xs uppercase tracking-widest mb-1", children: "Hello," }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-2xl font-bold text-foreground", children: order.customerName })
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "div",
-                  {
-                    className: "rounded-2xl p-4 mb-6 space-y-3",
-                    style: { background: "#F5F0E8" },
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-medium", children: "Order ID" }),
-                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-sm font-semibold text-foreground", children: order.orderId })
-                      ] }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px bg-border" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] text-muted-foreground uppercase tracking-[0.15em] font-medium", children: "Status" }),
-                        /* @__PURE__ */ jsxRuntimeExports.jsx(StatusBadge, { status: order.status })
-                      ] })
-                    ]
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "a",
-                  {
-                    "data-ocid": "tracking.primary_button",
-                    href: order.trackingLink,
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    className: "flex items-center justify-center gap-2 w-full bg-gold hover:bg-gold-hover text-white font-semibold py-4 px-6 rounded-full transition-colors shadow-gold text-base",
-                    children: [
-                      "Track Shipment",
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { className: "w-4 h-4" })
-                    ]
-                  }
-                )
-              ] })
-            ]
-          }
-        ) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          motion.p,
-          {
-            initial: { opacity: 0 },
-            animate: { opacity: 1 },
-            transition: { delay: 0.5 },
-            className: "mt-10 text-xs text-muted-foreground text-center",
-            children: [
-              "Powered by",
-              " ",
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "a",
-                {
-                  href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`,
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                  className: "text-gold hover:underline",
-                  children: "caffeine.ai"
-                }
-              )
-            ]
-          }
-        )
-      ]
-    }
-  );
-}
-const rootRoute = createRootRoute();
-const indexRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/",
-  component: Home
-});
-const adminLoginRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/admin",
-  component: AdminLogin
-});
-const adminDashboardRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/admin/dashboard",
-  component: AdminDashboard
-});
-const trackRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/track/$orderId",
-  component: TrackOrder
-});
-const notFoundRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "*",
-  component: () => /* @__PURE__ */ jsxRuntimeExports.jsx(Navigate, { to: "/" })
-});
-const routeTree = rootRoute.addChildren([
-  indexRoute,
-  adminLoginRoute,
-  adminDashboardRoute,
-  trackRoute,
-  notFoundRoute
-]);
-const router = createRouter({ routeTree });
-function App() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(RouterProvider, { router }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Toaster, { position: "top-right", richColors: true })
-  ] });
 }
 BigInt.prototype.toJSON = function() {
   return this.toString();

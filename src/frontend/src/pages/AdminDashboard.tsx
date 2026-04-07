@@ -41,7 +41,6 @@ import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import type { Order } from "../backend";
 import { useActor } from "../hooks/useActor";
-import { useInternetIdentity } from "../hooks/useInternetIdentity";
 import {
   OrderStatus,
   useCreateOrder,
@@ -49,6 +48,8 @@ import {
   useGetAllOrders,
   useUpdateOrderStatus,
 } from "../hooks/useQueries";
+
+const SESSION_KEY = "giftnAura_admin_session";
 
 function formatDate(createdAt: bigint): string {
   return new Date(Number(createdAt / 1_000_000n)).toLocaleDateString("en-US", {
@@ -210,37 +211,18 @@ type EditOrderState = {
 
 export default function AdminDashboard() {
   const navigate = useNavigate();
-  const { clear, identity, isInitializing } = useInternetIdentity();
-  const { actor, isFetching: actorLoading } = useActor();
-  const isAuthenticated = !!identity;
+  const { isFetching: actorLoading } = useActor();
 
-  // Admin guard
-  const [adminVerified, setAdminVerified] = useState(false);
-  const [adminCheckDone, setAdminCheckDone] = useState(false);
+  // Session-based auth guard
+  const [sessionChecked, setSessionChecked] = useState(false);
 
   useEffect(() => {
-    if (!isInitializing && !isAuthenticated) {
+    if (localStorage.getItem(SESSION_KEY) !== "true") {
       navigate({ to: "/admin", replace: true });
+    } else {
+      setSessionChecked(true);
     }
-  }, [isAuthenticated, isInitializing, navigate]);
-
-  useEffect(() => {
-    if (!actor || actorLoading || adminCheckDone) return;
-    actor
-      .isCallerAdmin()
-      .then((isAdmin) => {
-        setAdminCheckDone(true);
-        if (!isAdmin) {
-          navigate({ to: "/admin", replace: true });
-        } else {
-          setAdminVerified(true);
-        }
-      })
-      .catch(() => {
-        setAdminCheckDone(true);
-        navigate({ to: "/admin", replace: true });
-      });
-  }, [actor, actorLoading, adminCheckDone, navigate]);
+  }, [navigate]);
 
   // Add Order form state
   const [customerName, setCustomerName] = useState("");
@@ -297,13 +279,10 @@ export default function AdminDashboard() {
       toast.error("Please fill in all fields");
       return;
     }
-    // Update status only (backend supports updateOrderStatus)
-    // We update status and then save a new order with same ID if name/link changed
     updateStatus.mutate(
       { orderId: editState.order.orderId, status: editStatus },
       {
         onSuccess: () => {
-          // If name or link changed, we need to recreate (delete + create)
           if (
             editCustomerName.trim() !== editState.order.customerName ||
             editTrackingLink.trim() !== editState.order.trackingLink
@@ -391,7 +370,7 @@ export default function AdminDashboard() {
   }
 
   function handleLogout() {
-    clear();
+    localStorage.removeItem(SESSION_KEY);
     navigate({ to: "/admin", replace: true });
   }
 
@@ -403,7 +382,7 @@ export default function AdminDashboard() {
     toast.success("Link copied!");
   }
 
-  if (!adminVerified || isInitializing) {
+  if (!sessionChecked || actorLoading) {
     return (
       <div
         className="min-h-screen flex items-center justify-center"
