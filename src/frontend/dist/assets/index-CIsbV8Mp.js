@@ -50103,14 +50103,14 @@ function useActor() {
     queryKey: [ACTOR_QUERY_KEY, identity == null ? void 0 : identity.getPrincipal().toString()],
     queryFn: async () => {
       const isAuthenticated = !!identity;
-      if (!isAuthenticated) {
-        return await createActorWithConfig();
+      let actorOptions = {};
+      if (isAuthenticated) {
+        actorOptions = {
+          agentOptions: {
+            identity
+          }
+        };
       }
-      const actorOptions = {
-        agentOptions: {
-          identity
-        }
-      };
       const actor = await createActorWithConfig(actorOptions);
       const adminToken = getSecretParameter("caffeineAdminToken") || "";
       await actor._initializeAccessControlWithSecret(adminToken);
@@ -50118,7 +50118,6 @@ function useActor() {
     },
     // Only refetch when identity changes
     staleTime: Number.POSITIVE_INFINITY,
-    // This will cause the actor to be recreated when the identity changes
     enabled: true
   });
   reactExports.useEffect(() => {
