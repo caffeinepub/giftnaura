@@ -28,7 +28,6 @@ import { useNavigate } from "@tanstack/react-router";
 import {
   CheckCircle2,
   Copy,
-  Gift,
   Loader2,
   LogOut,
   Package2,
@@ -432,10 +431,12 @@ export default function AdminDashboard() {
       <header className="sticky top-0 z-20 bg-white/80 backdrop-blur-md border-b border-border">
         <div className="max-w-4xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Gift className="w-5 h-5 text-gold" />
-            <h1 className="font-display text-xl md:text-2xl font-bold text-foreground">
-              gift<span className="text-gold">Naura</span>
-            </h1>
+            <img
+              src="/assets/generated/giftnAura-logo-cropped.dim_440x200.png"
+              alt="giftNaura"
+              className="h-10 w-auto object-contain"
+              style={{ maxWidth: "140px" }}
+            />
           </div>
           <button
             type="button"

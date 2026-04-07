@@ -1,5 +1,5 @@
 import { useParams } from "@tanstack/react-router";
-import { ExternalLink, Gift, Loader2, PackageSearch } from "lucide-react";
+import { ExternalLink, Loader2, PackageSearch } from "lucide-react";
 import { motion } from "motion/react";
 import { OrderStatus, useGetOrder } from "../hooks/useQueries";
 
@@ -61,12 +61,12 @@ export default function TrackOrder() {
         transition={{ duration: 0.4 }}
         className="text-center mb-8"
       >
-        <div className="flex items-center justify-center gap-2 mb-2">
-          <Gift className="w-6 h-6 text-gold" />
-          <h1 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-            gift<span className="text-gold">Naura</span>
-          </h1>
-        </div>
+        <img
+          src="/assets/generated/giftnAura-logo-cropped.dim_440x200.png"
+          alt="giftNaura"
+          className="h-16 w-auto object-contain mx-auto mb-2"
+          style={{ maxWidth: "200px" }}
+        />
         <p className="text-muted-foreground text-xs uppercase tracking-[0.18em] mt-1">
           Track Your Order
         </p>

@@ -1,5 +1,5 @@
 import { useNavigate } from "@tanstack/react-router";
-import { Gift, Loader2, ShieldAlert } from "lucide-react";
+import { Loader2, ShieldAlert } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { useActor } from "../hooks/useActor";
@@ -54,12 +54,12 @@ export default function AdminLogin() {
         <div className="bg-white rounded-3xl shadow-card p-8 md:p-10">
           {/* Brand */}
           <div className="text-center mb-8">
-            <div className="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mx-auto mb-4">
-              <Gift className="w-7 h-7 text-gold" />
-            </div>
-            <h1 className="font-display text-3xl font-bold text-foreground mb-1.5">
-              gift<span className="text-gold">Naura</span>
-            </h1>
+            <img
+              src="/assets/generated/giftnAura-logo-cropped.dim_440x200.png"
+              alt="giftNaura"
+              className="h-20 w-auto object-contain mx-auto mb-4"
+              style={{ maxWidth: "220px" }}
+            />
             <p className="text-muted-foreground text-sm">Admin Portal</p>
           </div>
 

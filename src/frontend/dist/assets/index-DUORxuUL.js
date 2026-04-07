@@ -50529,13 +50529,15 @@ function AdminDashboard() {
       },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-20 bg-white/80 backdrop-blur-md border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-4xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Gift, { className: "w-5 h-5 text-gold" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-display text-xl md:text-2xl font-bold text-foreground", children: [
-              "gift",
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Naura" })
-            ] })
-          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "img",
+            {
+              src: "/assets/generated/giftnAura-logo-cropped.dim_440x200.png",
+              alt: "giftNaura",
+              className: "h-10 w-auto object-contain",
+              style: { maxWidth: "140px" }
+            }
+          ) }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "button",
             {
@@ -50958,11 +50960,15 @@ function AdminLogin() {
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-white rounded-3xl shadow-card p-8 md:p-10", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-8", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Gift, { className: "w-7 h-7 text-gold" }) }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-display text-3xl font-bold text-foreground mb-1.5", children: [
-                  "gift",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Naura" })
-                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "img",
+                  {
+                    src: "/assets/generated/giftnAura-logo-cropped.dim_440x200.png",
+                    alt: "giftNaura",
+                    className: "h-20 w-auto object-contain mx-auto mb-4",
+                    style: { maxWidth: "220px" }
+                  }
+                ),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm", children: "Admin Portal" })
               ] }),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-8", children: [
@@ -51259,13 +51265,15 @@ function TrackOrder() {
             transition: { duration: 0.4 },
             className: "text-center mb-8",
             children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-2 mb-2", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Gift, { className: "w-6 h-6 text-gold" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-display text-3xl md:text-4xl font-bold text-foreground", children: [
-                  "gift",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "Naura" })
-                ] })
-              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "img",
+                {
+                  src: "/assets/generated/giftnAura-logo-cropped.dim_440x200.png",
+                  alt: "giftNaura",
+                  className: "h-16 w-auto object-contain mx-auto mb-2",
+                  style: { maxWidth: "200px" }
+                }
+              ),
               /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-xs uppercase tracking-[0.18em] mt-1", children: "Track Your Order" })
             ]
           }
