@@ -39,9 +39,12 @@ export default function Home() {
               gift<span className="text-gold">Naura</span>
             </span>
           </div>
-          <nav aria-label="Main navigation">
-            {/* No admin links on the public page */}
-          </nav>
+          <a
+            href="/admin"
+            className="flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-full bg-gold hover:bg-gold-hover text-white shadow-gold transition-colors"
+          >
+            Admin Login
+          </a>
         </div>
       </header>
 
@@ -72,6 +75,12 @@ export default function Home() {
                 Manage orders privately, share beautiful tracking pages, and
                 impress your customers every time.
               </p>
+              <a
+                href="/admin"
+                className="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-white font-semibold py-3.5 px-7 rounded-full transition-colors shadow-gold text-sm"
+              >
+                Go to Admin Panel
+              </a>
             </div>
 
             {/* Phone preview */}
