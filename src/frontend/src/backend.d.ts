@@ -19,7 +19,9 @@ export interface UserProfile {
 }
 export enum OrderStatus {
     shipped = "shipped",
-    delivered = "delivered"
+    cancelled = "cancelled",
+    delivered = "delivered",
+    processing = "processing"
 }
 export enum UserRole {
     admin = "admin",
@@ -28,7 +30,7 @@ export enum UserRole {
 }
 export interface backendInterface {
     assignCallerUserRole(user: Principal, role: UserRole): Promise<void>;
-    createOrder(newOrder: Order): Promise<void>;
+    createOrder(order: Order): Promise<void>;
     deleteOrder(orderId: string): Promise<void>;
     getAllOrders(): Promise<Array<Order>>;
     getCallerUserProfile(): Promise<UserProfile | null>;

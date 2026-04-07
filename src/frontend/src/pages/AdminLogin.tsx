@@ -1,11 +1,11 @@
 import { useNavigate } from "@tanstack/react-router";
-import { Loader2, ShieldAlert } from "lucide-react";
+import { Gift, Loader2, ShieldAlert } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { useActor } from "../hooks/useActor";
 import { useInternetIdentity } from "../hooks/useInternetIdentity";
 
-export default function LoginPage() {
+export default function AdminLogin() {
   const navigate = useNavigate();
   const { login, clear, identity, isLoggingIn, isInitializing } =
     useInternetIdentity();
@@ -26,7 +26,7 @@ export default function LoginPage() {
         setAdminCheckDone(true);
         setCheckingAdmin(false);
         if (result) {
-          navigate({ to: "/admin", replace: true });
+          navigate({ to: "/admin/dashboard", replace: true });
         }
       })
       .catch(() => {
@@ -40,11 +40,13 @@ export default function LoginPage() {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center px-4"
-      style={{ background: "linear-gradient(to bottom, #E9DDCB, #E3D3BE)" }}
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-12"
+      style={{
+        background: "linear-gradient(160deg, #F5F0E8 0%, #EDE4D3 100%)",
+      }}
     >
       <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
+        initial={{ opacity: 0, scale: 0.96 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.35 }}
         className="w-full max-w-sm"
@@ -52,43 +54,46 @@ export default function LoginPage() {
         <div className="bg-white rounded-3xl shadow-card p-8 md:p-10">
           {/* Brand */}
           <div className="text-center mb-8">
-            <h1 className="font-display text-3xl font-bold text-foreground mb-2">
+            <div className="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mx-auto mb-4">
+              <Gift className="w-7 h-7 text-gold" />
+            </div>
+            <h1 className="font-display text-3xl font-bold text-foreground mb-1.5">
               gift<span className="text-gold">Naura</span>
             </h1>
             <p className="text-muted-foreground text-sm">Admin Portal</p>
           </div>
 
-          {/* Gold divider */}
+          {/* Divider */}
           <div className="flex items-center gap-3 mb-8">
             <div className="flex-1 h-px bg-border" />
-            <span className="text-xs text-gold font-medium uppercase tracking-wider">
+            <span className="text-[10px] text-gold font-semibold uppercase tracking-[0.18em]">
               Secure Login
             </span>
             <div className="flex-1 h-px bg-border" />
           </div>
 
-          {/* Access denied state */}
+          {/* Access Denied */}
           {isAuthenticated && adminCheckDone && !isAdmin && (
             <motion.div
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               data-ocid="login.error_state"
-              className="mb-6 p-4 rounded-2xl bg-destructive/10 border border-destructive/20 flex gap-3"
+              className="mb-6 p-4 rounded-2xl bg-destructive/8 border border-destructive/20 flex gap-3"
             >
               <ShieldAlert className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
               <div>
-                <p className="text-sm font-medium text-destructive">
+                <p className="text-sm font-semibold text-destructive">
                   Access Denied
                 </p>
-                <p className="text-xs text-destructive/80 mt-1">
-                  This is an admin-only area. Your account does not have
-                  administrator privileges.
+                <p className="text-xs text-destructive/70 mt-1 leading-relaxed">
+                  This portal is for administrators only. Your account does not
+                  have admin privileges.
                 </p>
               </div>
             </motion.div>
           )}
 
-          {/* Login / Logout button */}
+          {/* Actions */}
           {!isAuthenticated || (adminCheckDone && !isAdmin) ? (
             <div className="space-y-3">
               {!isAuthenticated && (
@@ -97,7 +102,7 @@ export default function LoginPage() {
                   data-ocid="login.primary_button"
                   onClick={login}
                   disabled={isLoading}
-                  className="w-full flex items-center justify-center gap-2 bg-gold hover:bg-gold-hover text-white font-medium py-3 px-6 rounded-full transition-colors shadow-gold disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full flex items-center justify-center gap-2 bg-gold hover:bg-gold-hover text-white font-semibold py-3.5 px-6 rounded-full transition-colors shadow-gold disabled:opacity-60 disabled:cursor-not-allowed text-sm"
                 >
                   {isLoading ? (
                     <Loader2 className="w-4 h-4 animate-spin" />
@@ -110,30 +115,30 @@ export default function LoginPage() {
                   type="button"
                   data-ocid="login.secondary_button"
                   onClick={clear}
-                  className="w-full flex items-center justify-center gap-2 bg-white border-2 border-gold text-gold hover:bg-gold-muted font-medium py-3 px-6 rounded-full transition-colors"
+                  className="w-full flex items-center justify-center gap-2 bg-white border-2 border-gold text-gold hover:bg-gold/5 font-semibold py-3.5 px-6 rounded-full transition-colors text-sm"
                 >
-                  Logout
+                  Try a Different Account
                 </button>
               )}
             </div>
           ) : (
             <div
               data-ocid="login.loading_state"
-              className="flex items-center justify-center py-4"
+              className="flex items-center justify-center py-5"
             >
-              <Loader2 className="w-6 h-6 text-gold animate-spin" />
+              <Loader2 className="w-5 h-5 text-gold animate-spin" />
               <span className="ml-3 text-muted-foreground text-sm">
                 Verifying access...
               </span>
             </div>
           )}
 
-          <p className="text-center text-xs text-muted-foreground mt-6">
+          <p className="text-center text-xs text-muted-foreground mt-7">
             Protected by Internet Identity
           </p>
         </div>
 
-        <p className="text-center text-xs text-muted-foreground mt-4">
+        <p className="text-center text-xs text-muted-foreground mt-5">
           <a href="/" className="hover:text-gold transition-colors">
             ← Back to home
           </a>

@@ -6,35 +6,35 @@ import {
   createRoute,
   createRouter,
 } from "@tanstack/react-router";
-import AdminPage from "./pages/AdminPage";
-import LandingPage from "./pages/LandingPage";
-import LoginPage from "./pages/LoginPage";
-import TrackingPage from "./pages/TrackingPage";
+import AdminDashboard from "./pages/AdminDashboard";
+import AdminLogin from "./pages/AdminLogin";
+import Home from "./pages/Home";
+import TrackOrder from "./pages/TrackOrder";
 
 const rootRoute = createRootRoute();
 
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/",
-  component: LandingPage,
+  component: Home,
 });
 
-const loginRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/login",
-  component: LoginPage,
-});
-
-const adminRoute = createRoute({
+const adminLoginRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/admin",
-  component: AdminPage,
+  component: AdminLogin,
 });
 
-const trackingRoute = createRoute({
+const adminDashboardRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/admin/dashboard",
+  component: AdminDashboard,
+});
+
+const trackRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/track/$orderId",
-  component: TrackingPage,
+  component: TrackOrder,
 });
 
 const notFoundRoute = createRoute({
@@ -45,9 +45,9 @@ const notFoundRoute = createRoute({
 
 const routeTree = rootRoute.addChildren([
   indexRoute,
-  loginRoute,
-  adminRoute,
-  trackingRoute,
+  adminLoginRoute,
+  adminDashboardRoute,
+  trackRoute,
   notFoundRoute,
 ]);
 

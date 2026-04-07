@@ -101,7 +101,9 @@ export interface UserProfile {
 }
 export enum OrderStatus {
     shipped = "shipped",
-    delivered = "delivered"
+    cancelled = "cancelled",
+    delivered = "delivered",
+    processing = "processing"
 }
 export enum UserRole {
     admin = "admin",
@@ -111,7 +113,7 @@ export enum UserRole {
 export interface backendInterface {
     _initializeAccessControlWithSecret(userSecret: string): Promise<void>;
     assignCallerUserRole(user: Principal, role: UserRole): Promise<void>;
-    createOrder(newOrder: Order): Promise<void>;
+    createOrder(order: Order): Promise<void>;
     deleteOrder(orderId: string): Promise<void>;
     getAllOrders(): Promise<Array<Order>>;
     getCallerUserProfile(): Promise<UserProfile | null>;
@@ -330,9 +332,13 @@ function from_candid_record_n9(_uploadFile: (file: ExternalBlob) => Promise<Uint
 function from_candid_variant_n11(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: {
     shipped: null;
 } | {
+    cancelled: null;
+} | {
     delivered: null;
+} | {
+    processing: null;
 }): OrderStatus {
-    return "shipped" in value ? OrderStatus.shipped : "delivered" in value ? OrderStatus.delivered : value;
+    return "shipped" in value ? OrderStatus.shipped : "cancelled" in value ? OrderStatus.cancelled : "delivered" in value ? OrderStatus.delivered : "processing" in value ? OrderStatus.processing : value;
 }
 function from_candid_variant_n14(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: {
     admin: null;
@@ -394,12 +400,20 @@ function to_candid_variant_n2(_uploadFile: (file: ExternalBlob) => Promise<Uint8
 function to_candid_variant_n6(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: OrderStatus): {
     shipped: null;
 } | {
+    cancelled: null;
+} | {
     delivered: null;
+} | {
+    processing: null;
 } {
     return value == OrderStatus.shipped ? {
         shipped: null
+    } : value == OrderStatus.cancelled ? {
+        cancelled: null
     } : value == OrderStatus.delivered ? {
         delivered: null
+    } : value == OrderStatus.processing ? {
+        processing: null
     } : value;
 }
 export interface CreateActorOptions {

@@ -18,7 +18,9 @@ export interface Order {
   'orderId' : string,
 }
 export type OrderStatus = { 'shipped' : null } |
-  { 'delivered' : null };
+  { 'cancelled' : null } |
+  { 'delivered' : null } |
+  { 'processing' : null };
 export interface UserProfile { 'name' : string }
 export type UserRole = { 'admin' : null } |
   { 'user' : null } |

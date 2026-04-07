@@ -15,7 +15,9 @@ export const UserRole = IDL.Variant({
 });
 export const OrderStatus = IDL.Variant({
   'shipped' : IDL.Null,
+  'cancelled' : IDL.Null,
   'delivered' : IDL.Null,
+  'processing' : IDL.Null,
 });
 export const Order = IDL.Record({
   'customerName' : IDL.Text,
@@ -55,7 +57,9 @@ export const idlFactory = ({ IDL }) => {
   });
   const OrderStatus = IDL.Variant({
     'shipped' : IDL.Null,
+    'cancelled' : IDL.Null,
     'delivered' : IDL.Null,
+    'processing' : IDL.Null,
   });
   const Order = IDL.Record({
     'customerName' : IDL.Text,
