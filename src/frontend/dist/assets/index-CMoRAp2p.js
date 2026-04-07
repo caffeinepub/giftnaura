@@ -50102,13 +50102,18 @@ function useActor() {
   const actorQuery = useQuery({
     queryKey: [ACTOR_QUERY_KEY, identity == null ? void 0 : identity.getPrincipal().toString()],
     queryFn: async () => {
-      const actor = await createActorWithConfig(
-        identity ? { agentOptions: { identity } } : void 0
-      );
-      const adminToken = getSecretParameter("caffeineAdminToken");
-      if (adminToken) {
-        await actor._initializeAccessControlWithSecret(adminToken);
+      const isAuthenticated = !!identity;
+      if (!isAuthenticated) {
+        return await createActorWithConfig();
       }
+      const actorOptions = {
+        agentOptions: {
+          identity
+        }
+      };
+      const actor = await createActorWithConfig(actorOptions);
+      const adminToken = getSecretParameter("caffeineAdminToken") || "";
+      await actor._initializeAccessControlWithSecret(adminToken);
       return actor;
     },
     // Only refetch when identity changes

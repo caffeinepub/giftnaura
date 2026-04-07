@@ -12,13 +12,22 @@ export function useActor() {
   const actorQuery = useQuery<backendInterface>({
     queryKey: [ACTOR_QUERY_KEY, identity?.getPrincipal().toString()],
     queryFn: async () => {
-      const actor = await createActorWithConfig(
-        identity ? { agentOptions: { identity } } : undefined,
-      );
-      const adminToken = getSecretParameter("caffeineAdminToken");
-      if (adminToken) {
-        await actor._initializeAccessControlWithSecret(adminToken);
+      const isAuthenticated = !!identity;
+
+      if (!isAuthenticated) {
+        // Return anonymous actor if not authenticated
+        return await createActorWithConfig();
       }
+
+      const actorOptions = {
+        agentOptions: {
+          identity,
+        },
+      };
+
+      const actor = await createActorWithConfig(actorOptions);
+      const adminToken = getSecretParameter("caffeineAdminToken") || "";
+      await actor._initializeAccessControlWithSecret(adminToken);
       return actor;
     },
     // Only refetch when identity changes
